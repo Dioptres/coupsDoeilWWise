@@ -33,7 +33,7 @@
 								<Action Name="Play" ID="{5EECB1E0-85D3-49B3-B430-48834F5D37C3}" ShortID="697022931" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{6E4EB892-1B72-4D88-81C7-214E9F0D867A}" Global="false">
-											<ObjectRef Name="Music" ID="{B2EA77D8-7018-4252-B988-9DA2AF475037}" WorkUnitID="{3A995CFB-15AA-4EDE-A2B9-2FEEC12B8849}"/>
+											<ObjectRef Name="Musique" ID="{E664DD95-3E60-4ACA-ADF1-B26FF6751AB3}" WorkUnitID="{3A995CFB-15AA-4EDE-A2B9-2FEEC12B8849}"/>
 										</Element>
 									</ElementList>
 								</Action>

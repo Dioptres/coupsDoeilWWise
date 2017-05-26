@@ -101,7 +101,12 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Percu_jeu" ID="{B99525C8-481B-4A8D-BFF5-D2C39151DB49}"/>
+						<CurrentStateRef Name="None" ID="{E829166D-6305-43D1-95C4-919D71E81942}"/>
+						<CurrentStateRef Name="Uku_isplaying" ID="{B290B6F5-61B4-4BBC-96EA-612B7851E8C0}"/>
+						<CurrentStateRef Name="Flute_notplaying" ID="{E2912BD8-623C-4FBE-A7A9-AE21B01ABF8E}"/>
 						<CurrentStateRef Name="Percu" ID="{4DA17545-0801-4878-8929-8BAEB127AD06}"/>
+						<CurrentStateRef Name="Bass_notplaying" ID="{4764B5C7-91E4-42B9-AD18-919BEE57A299}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
