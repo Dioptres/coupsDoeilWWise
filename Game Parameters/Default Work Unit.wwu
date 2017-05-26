@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{726C7246-E999-493B-A83B-0FCB2B6D0C35}" SchemaVersion="75">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{726C7246-E999-493B-A83B-0FCB2B6D0C35}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{726C7246-E999-493B-A83B-0FCB2B6D0C35}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="musiciens" ID="{29139CAB-6D2C-4A4A-B9A6-B5125BB8F465}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="4"/>
+						<Property Name="Max" Type="Real64" Value="4"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="foule" ID="{9D1CA258-5465-46A5-B01A-4E5B593A0DE5}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

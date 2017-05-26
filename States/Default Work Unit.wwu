@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CD76C964-A821-4B77-B005-D71993E28AED}" SchemaVersion="75">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{CD76C964-A821-4B77-B005-D71993E28AED}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{CD76C964-A821-4B77-B005-D71993E28AED}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="musique" ID="{C1D76EFF-A6E2-4892-87ED-64F18004CE03}">
+					<ChildrenList>
+						<State Name="None" ID="{0C27B7B5-80A4-45CB-85F9-1F6F36931733}"/>
+						<State Name="Guitare_Bass_Ukulele" ID="{7EE2E6F5-9420-4DA0-B1AC-86DD0D2D214A}"/>
+						<State Name="Ensemble" ID="{245623CF-0469-4BD9-AB35-FFBE4CADC415}"/>
+						<State Name="Percu" ID="{4DA17545-0801-4878-8929-8BAEB127AD06}"/>
+						<State Name="Guitare_Bass" ID="{8EF0E077-A52D-462A-B141-27F997E664E3}"/>
+						<State Name="Bass_Uku" ID="{09DBAEB3-D626-488B-A877-A2953B422DCC}"/>
+						<State Name="Guitare_Uku" ID="{8A98C278-0F3B-4F5B-ACDF-92EB7E3B5550}"/>
+						<State Name="Bass_Flute" ID="{D7BEBFA2-0832-4853-96CC-8BAD32305138}"/>
+						<State Name="Guitare_Flute" ID="{418DCBBA-0BF7-442C-A77B-0BC19BAACA74}"/>
+						<State Name="Uku_Flute" ID="{DF1D025A-4FB1-43B6-BA05-F6103A46C41F}"/>
+						<State Name="Bass_Guitare_Flute" ID="{3AAEDFA8-9363-421C-9CF2-9A123F9D8164}"/>
+						<State Name="Guitare_Flute_Uku" ID="{FD0478C2-7D77-4FAE-A866-EA68AD0A1BDA}"/>
+						<State Name="Bass_Flute_Uku" ID="{F01963E3-B652-4558-9490-7D8117E89A95}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

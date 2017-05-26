@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{08A09459-30BA-4BA2-9B2F-3D2AE20D6EE6}" SchemaVersion="75">
+	<GameParameters>
+		<WorkUnit Name="BUS CONTROLLER" ID="{08A09459-30BA-4BA2-9B2F-3D2AE20D6EE6}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="SFX_VOLUME_OPTION" ID="{FBEB664A-901E-43FC-8DDF-26FD0A857080}"/>
+				<GameParameter Name="MUSIC_VOLUME_OPTION" ID="{6CAC29EB-34ED-43E8-BAA7-761670F6B9CA}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

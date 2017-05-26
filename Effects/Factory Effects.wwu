@@ -732,7 +732,8 @@
 							<PropertyList>
 								<Property Name="HFRatio" Type="Real32" Value="8"/>
 								<Property Name="NumberOfDelays" Type="int32" Value="12"/>
-								<Property Name="ReverbTime" Type="Real32" Value="1.5"/>
+								<Property Name="PreDelay" Type="Real32" Value="0.05"/>
+								<Property Name="ReverbTime" Type="Real32" Value="2"/>
 								<Property Name="WetLevel" Type="Real32" Value="-25"/>
 							</PropertyList>
 						</Effect>

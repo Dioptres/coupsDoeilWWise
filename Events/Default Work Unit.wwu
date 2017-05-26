@@ -1,6 +1,329 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}" SchemaVersion="75">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Step_rumeur" ID="{72B18749-81AC-4148-A8C7-5F0C52CB8EAB}">
+					<ChildrenList>
+						<Action Name="Play" ID="{A519BDCE-B3C2-42D6-9157-EDA7247D4E7C}" ShortID="97540366" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{828BCE52-58B8-46C2-A2D2-AA243B1EDFD7}" Global="false">
+									<ObjectRef Name="Step_rumeur" ID="{DB5C89B9-E5A2-4E94-8338-42E568290FF1}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{25C2920A-D054-40FD-BF12-83DCEDB2521E}" ShortID="988555111" Type="Play" Scope="One" Global="false"/>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Scene" ID="{77B1394A-7BD1-4973-900E-678F097289C6}" ShortID="269417043">
+					<ChildrenList>
+						<Event Name="AMBIANCE" ID="{4830E9EF-EFC2-4B02-BFD3-30D867A0ADA2}">
+							<ChildrenList>
+								<Action Name="Play" ID="{345AB2EB-5293-4CD8-A77D-2BFFF8E5AD16}" ShortID="589456179" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{25940C8D-D403-429D-93DE-00121979BDEF}" Global="false">
+											<ObjectRef Name="ambiance_nuit_provisoire" ID="{7647B29A-1A4D-49E0-89D7-F2432AEEA7A2}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="music" ID="{0721A261-C5C6-4445-9941-0D30EA56789E}">
+							<ChildrenList>
+								<Action Name="Play" ID="{5EECB1E0-85D3-49B3-B430-48834F5D37C3}" ShortID="697022931" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{6E4EB892-1B72-4D88-81C7-214E9F0D867A}" Global="false">
+											<ObjectRef Name="Music" ID="{B2EA77D8-7018-4252-B988-9DA2AF475037}" WorkUnitID="{3A995CFB-15AA-4EDE-A2B9-2FEEC12B8849}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Lampadaire_On" ID="{24AD6E99-08B5-42C2-8289-F18DC181FC5D}">
+							<ChildrenList>
+								<Action Name="Play" ID="{F660E00D-694B-47D5-834D-22D73BF5458A}" ShortID="358585384" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{99EBA2B1-0C7F-4670-AFD2-63749BF332F5}" Global="false">
+											<ObjectRef Name="Lampadaire_on" ID="{0BA8FC95-D759-45CE-A3D6-C3A14D64389E}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Lampadaire_Off" ID="{0D9B705F-8264-42E2-A923-5242C88A0902}">
+							<ChildrenList>
+								<Action Name="Play" ID="{C83B6458-365A-4282-8550-F965EE1E6354}" ShortID="213566139" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{B8420BBA-BB2F-4014-A556-028EB1A97F98}" Global="false">
+											<ObjectRef Name="Lampadaire_Off" ID="{BB5F47E2-9175-4FEE-9543-A54E52D8B483}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Lampadaire_Firework" ID="{41F380E7-1CB8-4A46-A109-19D98DED4BF2}">
+							<ChildrenList>
+								<Action Name="Play" ID="{82ADA978-46B5-4127-A7D6-A2959B5C3013}" ShortID="391251288" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{E279FEDB-D1ED-4A87-AD3B-3EF0C7723368}" Global="false">
+											<ObjectRef Name="Lampadaire_Firework" ID="{406841E5-96C3-4803-A820-2D44DBE1C485}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="foule" ID="{5779D056-1A40-4A61-AB3F-6EDAA9666565}">
+							<ChildrenList>
+								<Action Name="Play" ID="{5AE2B0BC-3D2D-49C3-A0D4-E0280F151440}" ShortID="619932284" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{420DBD1C-0504-4EEE-A3EF-0EA6958DDF50}" Global="false">
+											<ObjectRef Name="Foule" ID="{1377744B-166A-49D7-A6E9-8193B225ED50}" WorkUnitID="{3A995CFB-15AA-4EDE-A2B9-2FEEC12B8849}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Tournelune" ID="{7BF5D468-675B-45D8-9CAB-9E534B0A5A1B}">
+							<ChildrenList>
+								<Action Name="Play" ID="{99506BC6-EAD6-4E3E-B72A-CCC75838F4B5}" ShortID="720575377" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Musiciens" ID="{03EDAE54-8AE2-4C99-8D8D-1AE8578EF0EF}" ShortID="645840935">
+					<ChildrenList>
+						<Event Name="Guit_fill" ID="{FF6ABE96-8DEA-406C-B6C5-3491C5EC5230}">
+							<ChildrenList>
+								<Action Name="Play" ID="{37F4ED8C-B9E8-498B-A6D8-2EC78267480F}" ShortID="7445623" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{E0403A08-5BC4-4F88-B0AF-7814379B2260}" Global="false">
+											<ObjectRef Name="guitariste fill" ID="{462DEA74-80D7-49B9-AC67-10E3178693C4}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Bass_fill" ID="{3D146BBD-14E0-461F-A1B2-051A3E97F0B2}">
+							<ChildrenList>
+								<Action Name="Play" ID="{A754365C-9971-4AB4-A9C7-46ABD26C9377}" ShortID="539967121" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{7AE47ABC-893C-4051-9E14-C7E41B99634E}" Global="false">
+											<ObjectRef Name="Basse fill" ID="{B083E658-4C70-43BD-8F6D-97E9E61CCDDC}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Uku_fill" ID="{569020A4-A9E0-4798-9D39-56EEAA474F32}">
+							<ChildrenList>
+								<Action Name="Play" ID="{98570BC5-2CE5-4B9A-9518-7939C546B086}" ShortID="821328657" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{FA6DE744-47D1-4BF4-B3B6-7F71CA5F9540}" Global="false">
+											<ObjectRef Name="Uku fill" ID="{00295BD5-26D6-4F6B-8F69-E2690A270A5C}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Flute_fill" ID="{0141D782-7CA4-4DE4-A050-E7D05D30A49C}">
+							<ChildrenList>
+								<Action Name="Play" ID="{EDC04DFD-6120-46FA-BBCB-F1CFEA1337CE}" ShortID="146590559" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{02459ECD-6998-4622-9113-C2AB1E8F08E1}" Global="false">
+											<ObjectRef Name="Flutiste fill" ID="{4230003F-8505-4BA6-9C18-5DAC33609620}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Bass_marche" ID="{3BBBF456-C324-49EE-AC47-52DB2A3A3D13}">
+							<ChildrenList>
+								<Action Name="Play" ID="{232C14D4-2C1D-4F38-85A0-2EF8B616C809}" ShortID="347475455" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{405E03B0-3EDB-4918-BB7E-47DF3B1B6592}" Global="false">
+											<ObjectRef Name="Bass marche" ID="{E0BA6651-B874-4F73-B56C-1A6BCDBC8CB3}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Flute_marche" ID="{2E60F72A-C755-4883-A5F4-B40AC0F09EAB}">
+							<ChildrenList>
+								<Action Name="Play" ID="{7AF33439-5F2E-4979-9D47-2283713F8F56}" ShortID="338648617" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{C20A2DAE-3EF8-4839-AE35-862A7DE4E1CB}" Global="false">
+											<ObjectRef Name="Flute marche" ID="{E52E0DD8-3DB0-4DFE-8737-3E774632A3A8}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Guit_marche" ID="{3ACF36D4-4D0E-4728-B271-5CB3796835DD}">
+							<ChildrenList>
+								<Action Name="Play" ID="{13FE2E46-4042-49E7-BB6F-2D9C2DABB3DE}" ShortID="928642841" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{17D2C43D-6316-4336-8DB8-D3C5500E3DA6}" Global="false">
+											<ObjectRef Name="Guit marche" ID="{690D4736-06F7-4FEF-967A-2C87DFD2A092}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Uku_marche" ID="{6B430707-E590-495E-914A-C9BFF932AC6A}">
+							<ChildrenList>
+								<Action Name="Play" ID="{0F6FDDD4-9BFE-4074-BFA9-95FC3F4C63B5}" ShortID="526698613" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{9BD35D78-363C-43D3-9C3B-7AEDFC983DC3}" Global="false">
+											<ObjectRef Name="Uku marche" ID="{6949B97B-7FCA-4C05-8840-357ECC50B0D8}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Persos" ID="{0C01C288-C13E-40A8-9A62-83424E294FDC}" ShortID="117258003">
+					<ChildrenList>
+						<Event Name="Chanteur_fixe" ID="{CF013F8E-610F-4000-9532-C4CD227DB1F5}">
+							<ChildrenList>
+								<Action Name="Play" ID="{1B5EA607-3371-4222-967A-F9EE3A529C91}" ShortID="1012743428" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{8F33C64E-0440-4782-8074-55041A5D7AB5}" Global="false">
+											<ObjectRef Name="Chanteur_fixe" ID="{3AA07CA0-1139-4480-B87C-E4CDA53B2577}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Lampiste_luciole" ID="{3A9172FF-45E8-4D5D-91D3-C18A4281CEF1}">
+							<ChildrenList>
+								<Action Name="Play" ID="{EEB0D98C-11C8-4A9B-87D3-06E2E8631CC3}" ShortID="846934746" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{9A6B0B4F-ECA0-49FC-86BA-AEB46E44C8AB}" Global="false">
+											<ObjectRef Name="Lampiste_fixe" ID="{A0516A5A-593A-40EE-B50A-75F2550EECEF}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Lampiste_regard" ID="{7FA945B1-9796-4446-93E1-DC78CC95A28D}">
+							<ChildrenList>
+								<Action Name="Play" ID="{3087E1B6-6AC6-4B5B-B199-1F00A5E7EE11}" ShortID="237759457" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{CE2455F1-7FB3-4194-B836-A46DACCB4AF2}" Global="false">
+											<ObjectRef Name="Lampiste_regard" ID="{9A76E3C6-36B3-4E33-8232-14BE48C42221}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Chanteur_regard" ID="{82F134A5-E7CA-4B4B-B507-D381E8901246}">
+							<ChildrenList>
+								<Action Name="Play" ID="{D998CE06-6AC0-4750-BE71-EC7E291C1F8E}" ShortID="543861694" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{72D2970C-4F46-4194-8430-BFB57030E5E6}" Global="false">
+											<ObjectRef Name="Chanteur_regard" ID="{B9B06DD2-D4A2-4863-ABF6-906954EC3199}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Lampiste_tp_load" ID="{FC85CA93-F35E-4F55-AE16-75317F98CAF3}">
+							<ChildrenList>
+								<Action Name="Play" ID="{8029E7B7-6D59-44A9-93CC-69D78CB3B7B5}" ShortID="713077440" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{27ACA4D0-0A09-427D-A956-B0CD5CCE9653}" Global="false">
+											<ObjectRef Name="lampiste tp load" ID="{A78BFF9A-ED0C-4953-83FF-385EB3417EA6}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Lampiste_tp" ID="{1EC1CC68-DD3E-478A-AB72-146657499787}">
+							<ChildrenList>
+								<Action Name="Play" ID="{CE6DB424-8512-42AF-B513-8DD052F945BA}" ShortID="311788127" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{584D0960-A4CC-4E02-B453-3515D69FDF58}" Global="false">
+											<ObjectRef Name="Lampiste tp" ID="{7F8B7291-1554-49EA-8D61-D2038F0712A0}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Lampiste_reveil" ID="{8E7E3534-DE32-4D52-B60C-CC50D4558101}">
+							<ChildrenList>
+								<Action Name="Play" ID="{D40F2FD5-0FD0-49FA-AEFC-2DDE7A8DFC48}" ShortID="42898149" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="Rumeur_reveil" ID="{639ECEA3-6133-43BD-A83B-A334243B4D3E}">
+							<ChildrenList>
+								<Action Name="Play" ID="{BC600D46-018E-4377-9C0E-8EBACD3CA728}" ShortID="571470517" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{632AE981-27B7-4A56-9364-E3B34F159B8A}" Global="false">
+											<ObjectRef Name="rumeur_interract3" ID="{E6F89B76-4025-4CCD-8F48-37B237232878}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Rumeur_marche" ID="{EC0295D2-64F1-41FD-BDE8-5088B9B48E50}">
+							<ChildrenList>
+								<Action Name="Play" ID="{6E5994F8-67FF-4C64-8EA1-FFA1143A62E8}" ShortID="26855243" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{6316EC99-2300-4CDC-ABB5-696B12BA19C4}" Global="false">
+											<ObjectRef Name="rumeur_déplacement" ID="{BCBC1034-B7FB-4BEC-9747-84B041DCED51}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Rumeur_regard" ID="{F867E24A-CE0B-4708-BEE3-A7F87619FF6F}">
+							<ChildrenList>
+								<Action Name="Play" ID="{B822D414-7698-4D4B-A982-C9E42FD77D66}" ShortID="935174982" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{79BF3190-5DF4-43CD-94A2-5E3482A4AB9D}" Global="false">
+											<ObjectRef Name="Rumeur_regard" ID="{5C3463D2-DD5D-4660-B6EF-883F133338AE}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Agitateur_marche" ID="{DA9DC90D-1ED0-4A26-BEC8-FC25AAB3C83D}">
+							<ChildrenList>
+								<Action Name="Play" ID="{989D5C85-C906-408C-B803-F65C35409458}" ShortID="80307307" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{B3AF7C66-6327-436D-BBB4-6DBE0BCF64E1}" Global="false">
+											<ObjectRef Name="Agitateur déplace" ID="{4BE75DC2-0E28-40D2-B5C9-80E90236E1ED}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Agitateur_regard" ID="{6ED46D0A-E82E-431F-8699-2AC2B1CCDE39}">
+							<ChildrenList>
+								<Action Name="Play" ID="{51274085-C204-400E-9B89-2F77FC3B9B05}" ShortID="1026091700" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{64BFB45B-DED9-470B-8193-9FEC3F55F32C}" Global="false">
+											<ObjectRef Name="Agitateur Regard" ID="{3BC09799-4E27-4AF4-AAAC-E94C6CEF9DBD}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Lampiste_off" ID="{60CDDECF-0B54-44EB-9BB4-385C418C0AC5}">
+							<ChildrenList>
+								<Action Name="Play" ID="{25234EB2-4AD8-4610-80F4-91831179D09B}" ShortID="78402517" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{7819F30A-414B-4ACF-996C-37905E77EAF9}" Global="false">
+											<ObjectRef Name="lampiste off" ID="{E04F5839-B4C3-4E74-B89D-BA2ACDA52CB3}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
