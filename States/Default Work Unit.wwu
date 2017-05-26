@@ -3,7 +3,7 @@
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{CD76C964-A821-4B77-B005-D71993E28AED}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="musique" ID="{C1D76EFF-A6E2-4892-87ED-64F18004CE03}">
+				<StateGroup Name="state_anciennemethode" ID="{C1D76EFF-A6E2-4892-87ED-64F18004CE03}">
 					<ChildrenList>
 						<State Name="None" ID="{0C27B7B5-80A4-45CB-85F9-1F6F36931733}"/>
 						<State Name="Guitare_Bass_Ukulele" ID="{7EE2E6F5-9420-4DA0-B1AC-86DD0D2D214A}"/>
