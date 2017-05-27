@@ -927,6 +927,9 @@
 					</TransitionList>
 				</MusicSwitchContainer>
 				<MusicSwitchContainer Name="Musique" ID="{E664DD95-3E60-4ACA-ADF1-B26FF6751AB3}" ShortID="823848738">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="110"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -938,7 +941,7 @@
 					<ChildrenList>
 						<MusicSegment Name="groupe" ID="{5AD7D1C9-61BF-40E3-8146-03F0033D2EC7}" ShortID="967634617">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="128727.270833333"/>
+								<Property Name="EndPosition" Type="Real64" Value="150000"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1272,11 +1275,70 @@
 											<ClipList>
 												<MusicClip Name="Percu" ID="{308DB7DB-B590-4919-ACB5-C0804E796210}">
 													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="30545.4583333333"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="128727.272727273"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
 													<AudioSourceRef Name="Percu" ID="{5D45FAFC-BCCD-4207-AEFB-82A975A672D1}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{027AC8F5-FAB1-453A-BB54-A40BBA8D3B65}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>128.72727</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{3FA595CD-4E15-4F32-83C1-3244A50D9536}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>128.72727</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{82B19B1E-AF7A-4C94-9854-6A5266F60D3C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>128.72727</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
@@ -1288,7 +1350,7 @@
 								<MusicCue Name="Exit Cue" ID="{FE588036-C6DB-4BEB-BAA3-E234B63E49D6}">
 									<PropertyList>
 										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="1000"/>
+										<Property Name="TimeMs" Type="Real64" Value="128693.98345579"/>
 									</PropertyList>
 								</MusicCue>
 							</CueList>
