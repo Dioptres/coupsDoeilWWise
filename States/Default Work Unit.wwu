@@ -26,6 +26,14 @@
 						<State Name="Bass_isplaying" ID="{7B663229-0FC3-49E5-B2EB-BF9C96039B96}"/>
 						<State Name="Bass_notplaying" ID="{4764B5C7-91E4-42B9-AD18-919BEE57A299}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{D8E3E089-D012-4FEB-9208-1C3163BAC46C}"/>
+							<EndState Name="Bass_notplaying" ID="{4764B5C7-91E4-42B9-AD18-919BEE57A299}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 				<StateGroup Name="Guitare" ID="{AA3EDC64-34DD-41E4-BA48-D936FD757187}">
 					<ChildrenList>
@@ -33,6 +41,14 @@
 						<State Name="Guitare_isplaying" ID="{5B010C88-C1CB-488B-A617-9371FDCF3C41}"/>
 						<State Name="Guitare_notplaying" ID="{8B128307-0306-40F5-ABE1-FE693B469512}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{E829166D-6305-43D1-95C4-919D71E81942}"/>
+							<EndState Name="Guitare_notplaying" ID="{8B128307-0306-40F5-ABE1-FE693B469512}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 				<StateGroup Name="Uku" ID="{373216AB-D380-4656-AECA-96CA29C6DC29}">
 					<ChildrenList>
@@ -40,6 +56,14 @@
 						<State Name="Uku_isplaying" ID="{B290B6F5-61B4-4BBC-96EA-612B7851E8C0}"/>
 						<State Name="Uku_notplaying" ID="{6D29632D-385C-49F3-A451-F1240FA0B422}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{47F2BD74-E13E-4457-8E54-87EB2B6C0721}"/>
+							<EndState Name="Uku_notplaying" ID="{6D29632D-385C-49F3-A451-F1240FA0B422}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 				<StateGroup Name="Flute" ID="{335451CA-C778-480D-8AE7-05EA1C655C1F}">
 					<ChildrenList>
@@ -47,6 +71,14 @@
 						<State Name="Flute_isplaying" ID="{F8D50641-96EA-4ECB-B2DF-D2ABD03E51A3}"/>
 						<State Name="Flute_notplaying" ID="{E2912BD8-623C-4FBE-A7A9-AE21B01ABF8E}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{83059DF7-7B0F-4908-8F10-7147FB113238}"/>
+							<EndState Name="Flute_notplaying" ID="{E2912BD8-623C-4FBE-A7A9-AE21B01ABF8E}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 				<StateGroup Name="Percu" ID="{DCB1EA91-6EC3-41C2-B1CC-89E00DDF4A77}">
 					<ChildrenList>
@@ -54,6 +86,14 @@
 						<State Name="Percu_intro" ID="{FE344379-3145-4A9E-9095-97DA14D16B50}"/>
 						<State Name="Percu_jeu" ID="{B99525C8-481B-4A8D-BFF5-D2C39151DB49}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{32BC5FA3-C041-402D-BA0E-0E9934D7302E}"/>
+							<EndState Name="Percu_intro" ID="{FE344379-3145-4A9E-9095-97DA14D16B50}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>

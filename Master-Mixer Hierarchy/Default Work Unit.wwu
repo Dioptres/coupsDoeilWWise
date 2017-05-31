@@ -8,6 +8,9 @@
 						<Bus Name="MUSIC" ID="{626C5628-E2E1-4474-934B-8861FEE9AE67}">
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{C87CE0A6-61C0-417A-BD05-F418296D9483}" ShortID="948180304">
 											<ReferenceList>
@@ -40,6 +43,9 @@
 						<Bus Name="SFX" ID="{4B2FF78B-6F89-45F3-9BD8-3EF02D13CD24}">
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{C9179C9F-22C9-4670-B142-204CCDEF601A}" ShortID="689592998">
 											<ReferenceList>
