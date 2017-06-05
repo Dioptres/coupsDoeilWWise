@@ -14,7 +14,7 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="music" ID="{0721A261-C5C6-4445-9941-0D30EA56789E}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<ObjectRef Name="MUSIC" ID="{0721A261-C5C6-4445-9941-0D30EA56789E}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
