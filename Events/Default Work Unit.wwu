@@ -53,17 +53,6 @@
 				</Folder>
 				<Folder Name="Scene1_Lampes" ID="{C5E2DE75-7A8D-4F8F-83D8-E5F049718B81}" ShortID="823478052">
 					<ChildrenList>
-						<Event Name="Lampiste_luciole" ID="{3A9172FF-45E8-4D5D-91D3-C18A4281CEF1}">
-							<ChildrenList>
-								<Action Name="Play" ID="{EEB0D98C-11C8-4A9B-87D3-06E2E8631CC3}" ShortID="846934746" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{9A6B0B4F-ECA0-49FC-86BA-AEB46E44C8AB}" Global="false">
-											<ObjectRef Name="Lampiste_fixe" ID="{A0516A5A-593A-40EE-B50A-75F2550EECEF}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Lampiste_regard" ID="{7FA945B1-9796-4446-93E1-DC78CC95A28D}">
 							<ChildrenList>
 								<Action Name="Play" ID="{3087E1B6-6AC6-4B5B-B199-1F00A5E7EE11}" ShortID="237759457" Type="Play" Scope="One" Global="false">
@@ -95,7 +84,7 @@
 								<Action Name="Play" ID="{1B5EA607-3371-4222-967A-F9EE3A529C91}" ShortID="1012743428" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{8F33C64E-0440-4782-8074-55041A5D7AB5}" Global="false">
-											<ObjectRef Name="Chanteur_fixe" ID="{3AA07CA0-1139-4480-B87C-E4CDA53B2577}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+											<ObjectRef Name="Chanteur_psositif" ID="{3AA07CA0-1139-4480-B87C-E4CDA53B2577}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -276,7 +265,7 @@
 								<Action Name="Play" ID="{82ADA978-46B5-4127-A7D6-A2959B5C3013}" ShortID="391251288" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{E279FEDB-D1ED-4A87-AD3B-3EF0C7723368}" Global="false">
-											<ObjectRef Name="Lampadaire_Firework" ID="{406841E5-96C3-4803-A820-2D44DBE1C485}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+											<ObjectRef Name="Feux artifice" ID="{22200468-0ADB-419C-810D-A94C2CDC98B1}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
 										</Element>
 									</ElementList>
 								</Action>

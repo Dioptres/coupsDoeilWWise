@@ -4,6 +4,13 @@
 		<WorkUnit Name="COUPDOEIL" ID="{519601F9-D162-49C7-8813-472C6B2FAEC9}" OwnerID="{7B810EB0-746A-412B-ACE7-A0D353EF0C13}" PersistMode="Nested">
 			<ChildrenList>
 				<ActorMixer Name="AMBIANCE" ID="{327B7F19-5776-4B9C-9130-56C2832B551C}" ShortID="995135474">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-17</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -50,6 +57,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<BlendContainer Name="Lampiste_fixe" ID="{A0516A5A-593A-40EE-B50A-75F2550EECEF}" ShortID="94855701">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -70,6 +84,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Pop_firefly" ID="{8CAE3060-D350-4828-86F5-D4D8CB617DB4}" ShortID="387881753">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="3.37888817122594"/>
+														<Property Name="LoopEnd" Type="Real64" Value="1.78672112462006"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Pop_firefly.wav</AudioFile>
 												</AudioFileSource>
@@ -191,6 +210,27 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="TP lampiste" ID="{FC1CA4BA-C0C7-4AB6-9BFC-20AAAFE820F8}" ShortID="416215092" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TP lampiste" ID="{46FA0854-6850-41D4-95C8-6A677E311BF7}" ShortID="171198877">
+													<Language>SFX</Language>
+													<AudioFile>TP lampiste.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="TP lampiste" ID="{46FA0854-6850-41D4-95C8-6A677E311BF7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
@@ -326,16 +366,6 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<BlendContainer Name="Lampadaire_Firework" ID="{406841E5-96C3-4803-A820-2D44DBE1C485}" ShortID="349096444">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-										</Reference>
-									</ReferenceList>
-								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
@@ -513,6 +543,13 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Basse fill" ID="{B083E658-4C70-43BD-8F6D-97E9E61CCDDC}" ShortID="195662697">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -533,6 +570,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="bass1" ID="{56FFE511-F492-4277-9EDE-D1DE6C76E962}" ShortID="244665357">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.253899343544858"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0813654266958425"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>bass1.wav</AudioFile>
 												</AudioFileSource>
@@ -552,6 +593,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="bass2" ID="{6E7B5346-6AE1-432B-9B2F-2D7331FFE959}" ShortID="840695507">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.203063457330416"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.141210795040117"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>bass2.wav</AudioFile>
 												</AudioFileSource>
@@ -571,6 +616,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="bass3" ID="{B0888EAF-644F-42B3-8658-58A4478503CC}" ShortID="1054345100">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.104951130561634"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.109514223194748"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>bass3.wav</AudioFile>
 												</AudioFileSource>
@@ -665,83 +714,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="Chanteur_regard" ID="{B9B06DD2-D4A2-4863-ABF6-906954EC3199}" ShortID="506743311">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>4</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="chanteur_cible1" ID="{9CD2B358-2306-4C6A-A425-A704685724ED}" ShortID="877564307" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="chanteur_cible1" ID="{88AC206C-9F33-4B22-AE18-5E17AA9CE1C5}" ShortID="561540589">
-													<Language>SFX</Language>
-													<AudioFile>chanteur_cible1.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="chanteur_cible1" ID="{88AC206C-9F33-4B22-AE18-5E17AA9CE1C5}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="chanteur_cible2" ID="{73BB906D-6A84-41CB-9442-D7B7D02F3CCA}" ShortID="977469901" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="chanteur_cible2" ID="{C6E5549F-B109-4D26-9214-097316D7111D}" ShortID="408968431">
-													<Language>SFX</Language>
-													<AudioFile>chanteur_cible2.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="chanteur_cible2" ID="{C6E5549F-B109-4D26-9214-097316D7111D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Chanteur_cible3" ID="{8A5897A1-2F65-448B-9F8B-C4E2C1EBBB06}" ShortID="700881895" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Chanteur_cible3" ID="{357A272B-7B34-4668-9834-3614B9BB7EFC}" ShortID="945620425">
-													<Language>SFX</Language>
-													<AudioFile>Chanteur_cible3.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Chanteur_cible3" ID="{357A272B-7B34-4668-9834-3614B9BB7EFC}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Chanteur_fixe" ID="{3AA07CA0-1139-4480-B87C-E4CDA53B2577}" ShortID="26655988">
+								<RandomSequenceContainer Name="Chanteur_psositif" ID="{3AA07CA0-1139-4480-B87C-E4CDA53B2577}" ShortID="26655988">
 									<PropertyList>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
@@ -786,44 +759,6 @@
 												<ActiveSource Name="chanterur_sing4" ID="{D155203F-D2ED-43A5-980B-47B883752E42}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="chanteur_sing1" ID="{62EC201B-3DB7-4DEE-82CD-78043266A49C}" ShortID="196022073" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="chanteur_sing1" ID="{49E103B4-88D1-4F5E-BE6F-E7627D8309CA}" ShortID="267858783">
-													<Language>SFX</Language>
-													<AudioFile>chanteur_sing1.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="chanteur_sing1" ID="{49E103B4-88D1-4F5E-BE6F-E7627D8309CA}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="chanteur_sing2" ID="{E1CC75D5-C8CF-4EDF-B895-A7539C448A4A}" ShortID="981261777" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="chanteur_sing2" ID="{346C8AFC-5786-4D4D-9A89-122CB9647EC7}" ShortID="247538410">
-													<Language>SFX</Language>
-													<AudioFile>chanteur_sing2.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="chanteur_sing2" ID="{346C8AFC-5786-4D4D-9A89-122CB9647EC7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<Sound Name="chanteur_sing3" ID="{2AB09946-64A0-42CD-AFB3-0A9922EC5675}" ShortID="983950497" Type="SoundFX">
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -864,7 +799,140 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Steps" ID="{4DAC47AE-B5B3-451F-875F-E565F30700D8}" ShortID="959862687">
+								<RandomSequenceContainer Name="Chenteur_neutre" ID="{EC9D44A5-0B84-445D-B745-D2CE779CCB0D}" ShortID="723011190">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="crap neutre1" ID="{2A3F02AA-58CC-49AA-BD41-ED62DA52E3C9}" ShortID="569140364" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="crap neutre1" ID="{AD9C014D-44D0-4E0C-AF3E-2EFD283BF8F7}" ShortID="579686831">
+													<Language>SFX</Language>
+													<AudioFile>crap neutre1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="crap neutre1" ID="{AD9C014D-44D0-4E0C-AF3E-2EFD283BF8F7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="crap neutre2" ID="{A3C475C8-B65D-4C42-A28E-D97B2B8E5057}" ShortID="120930285" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="crap neutre2" ID="{876FDC08-9A2E-4095-8265-8397330C1FA0}" ShortID="981577851">
+													<Language>SFX</Language>
+													<AudioFile>crap neutre2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="crap neutre2" ID="{876FDC08-9A2E-4095-8265-8397330C1FA0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="crap neutre3" ID="{05FD4DA0-81D6-4A45-B4F6-27C183703EBB}" ShortID="231678736" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="crap neutre3" ID="{B14645E5-9492-4301-9273-44F98D2B1CBE}" ShortID="442928345">
+													<Language>SFX</Language>
+													<AudioFile>crap neutre3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="crap neutre3" ID="{B14645E5-9492-4301-9273-44F98D2B1CBE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="crap neutre 4" ID="{D04461FA-D859-4C3D-BA9D-06AC9508635F}" ShortID="797442194" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="crap neutre 4" ID="{9D088B0E-3E09-428C-90A1-DAA42377C659}" ShortID="235876094">
+													<Language>SFX</Language>
+													<AudioFile>crap neutre 4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="crap neutre 4" ID="{9D088B0E-3E09-428C-90A1-DAA42377C659}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="crap neutre 5" ID="{B35098AE-B3EB-4CAE-B335-470B431C028F}" ShortID="378141795" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="crap neutre 5" ID="{71DB31E1-04C5-48D8-8EA4-D3E136EDF895}" ShortID="794837972">
+													<Language>SFX</Language>
+													<AudioFile>crap neutre 5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="crap neutre 5" ID="{71DB31E1-04C5-48D8-8EA4-D3E136EDF895}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Chanteur_fail" ID="{7E846AA1-B646-4BC5-8D04-884FD242B1E0}" ShortID="509383836" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B3F3529E-A92B-4705-B287-C24F3101A8D5}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="25"/>
+															<Property Name="Min" Type="Real64" Value="-25"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -873,7 +941,16 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
 										</Reference>
 									</ReferenceList>
-								</RandomSequenceContainer>
+									<ChildrenList>
+										<AudioFileSource Name="crapaud fail" ID="{328B5E07-5D68-4876-8366-D76DB6730CD0}" ShortID="138611550">
+											<Language>SFX</Language>
+											<AudioFile>crapaud fail.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="crapaud fail" ID="{328B5E07-5D68-4876-8366-D76DB6730CD0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
@@ -1287,7 +1364,494 @@
 						</ActorMixer>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Scene5_feux" ID="{738345E7-87C3-4C51-9C26-983407D806A8}" ShortID="742477154"/>
+				<Folder Name="Scene5_feux" ID="{738345E7-87C3-4C51-9C26-983407D806A8}" ShortID="742477154">
+					<ChildrenList>
+						<BlendContainer Name="Feux artifice" ID="{22200468-0ADB-419C-810D-A94C2CDC98B1}" ShortID="519099222">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="impact" ID="{0414AA7B-FBA5-4CE8-A270-40907072D78F}" ShortID="541881968">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="254836__waxsocks__fireworks-display-04" ID="{12631493-0F83-4F25-A137-68DB273B0356}" ShortID="107339818" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="254836__waxsocks__fireworks-display-04" ID="{068A9941-3AC2-441A-ACB1-2E56FC31DDB2}" ShortID="780767141">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.656352583586626"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.31674012158055"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>254836__waxsocks__fireworks-display-04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="254836__waxsocks__fireworks-display-04" ID="{068A9941-3AC2-441A-ACB1-2E56FC31DDB2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="254836__waxsocks__fireworks-display-06" ID="{71C9E72F-8FF6-4FC8-BF36-BADF8081A6C0}" ShortID="582904734" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="254836__waxsocks__fireworks-display-06" ID="{37CC920F-AA22-40C8-94B0-EEFB22229466}" ShortID="900652215">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.674179331306991"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>254836__waxsocks__fireworks-display-06.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="254836__waxsocks__fireworks-display-06" ID="{37CC920F-AA22-40C8-94B0-EEFB22229466}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="254836__waxsocks__fireworks-display-10" ID="{E0173F1B-B15C-4BF0-A18F-7617BD41DE6E}" ShortID="739632775" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="254836__waxsocks__fireworks-display-10" ID="{CA4D3AF2-9A68-48BA-8185-E727395BFC0B}" ShortID="370565974">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.725265957446808"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>254836__waxsocks__fireworks-display-10.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="254836__waxsocks__fireworks-display-10" ID="{CA4D3AF2-9A68-48BA-8185-E727395BFC0B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="254836__waxsocks__fireworks-display-16" ID="{17AB225E-F1E0-4CDD-B645-FC36B50B940A}" ShortID="245948194" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="254836__waxsocks__fireworks-display-16" ID="{B5F790CF-A509-4E34-B936-BAFB987E191A}" ShortID="306103474">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.406003039513678"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>254836__waxsocks__fireworks-display-16.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="254836__waxsocks__fireworks-display-16" ID="{B5F790CF-A509-4E34-B936-BAFB987E191A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="254836__waxsocks__fireworks-display-18" ID="{91624483-5263-40C4-9BED-804C02129295}" ShortID="83033667" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="254836__waxsocks__fireworks-display-18" ID="{F231B063-0A09-4F36-BD50-E8EA16B189FF}" ShortID="598470481">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.351223404255319"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>254836__waxsocks__fireworks-display-18.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="254836__waxsocks__fireworks-display-18" ID="{F231B063-0A09-4F36-BD50-E8EA16B189FF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="254836__waxsocks__fireworks-display-30" ID="{115D970A-A651-47C1-882A-2C72852A79F9}" ShortID="1067714852" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="254836__waxsocks__fireworks-display-30" ID="{DFFC190F-6542-44E4-94BE-782AC226EEFF}" ShortID="378510445">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.47644376899696"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.333009118541033"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>254836__waxsocks__fireworks-display-30.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="254836__waxsocks__fireworks-display-30" ID="{DFFC190F-6542-44E4-94BE-782AC226EEFF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="254836__waxsocks__fireworks-display-32" ID="{863E27F5-1F23-443C-82E6-9E4AF51FA16E}" ShortID="601787658" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="254836__waxsocks__fireworks-display-32" ID="{FB78B18B-CD1F-42CC-B920-D720B8D5E0F6}" ShortID="735198366">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.76193009118541"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0806990881458967"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>254836__waxsocks__fireworks-display-32.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="254836__waxsocks__fireworks-display-32" ID="{FB78B18B-CD1F-42CC-B920-D720B8D5E0F6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="254836__waxsocks__fireworks-display-34" ID="{391C44DB-1079-43D4-BD49-B0BBBCF99AD7}" ShortID="881075853" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="254836__waxsocks__fireworks-display-34" ID="{86CCE718-7AD0-4680-84AF-61F14E5EF5BC}" ShortID="116068867">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.798271276595745"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.130452127659574"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>254836__waxsocks__fireworks-display-34.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="254836__waxsocks__fireworks-display-34" ID="{86CCE718-7AD0-4680-84AF-61F14E5EF5BC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="254836__waxsocks__fireworks-display-46" ID="{EA1A63CC-39EF-4B35-8C25-2509ABC79CFE}" ShortID="473396268" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="254836__waxsocks__fireworks-display-46" ID="{7BC3D409-A38D-485F-B992-8DC13607ABBE}" ShortID="1052745879">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.09616261398176"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0699392097264438"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>254836__waxsocks__fireworks-display-46.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="254836__waxsocks__fireworks-display-46" ID="{7BC3D409-A38D-485F-B992-8DC13607ABBE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="254836__waxsocks__fireworks-display-48" ID="{4EF4E414-B137-449E-A6B6-B5982894E056}" ShortID="66735773" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="254836__waxsocks__fireworks-display-48" ID="{CF81589D-C52D-4CEB-B693-400927F34F4C}" ShortID="1056765298">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.644407294832827"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0413297872340425"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>254836__waxsocks__fireworks-display-48.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="254836__waxsocks__fireworks-display-48" ID="{CF81589D-C52D-4CEB-B693-400927F34F4C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="254836__waxsocks__fireworks-display-56" ID="{DF618D0F-C02B-44DB-A665-66CC22AC0067}" ShortID="388843315" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="254836__waxsocks__fireworks-display-56" ID="{CC26459B-5AC0-4358-BCC0-C281858E094D}" ShortID="136866698">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.39878419452887"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.05782674772036"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>254836__waxsocks__fireworks-display-56.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="254836__waxsocks__fireworks-display-56" ID="{CC26459B-5AC0-4358-BCC0-C281858E094D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="254836__waxsocks__fireworks-display-60" ID="{CEF24D18-C338-4EBD-B830-D2EDB213219D}" ShortID="674152780" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="254836__waxsocks__fireworks-display-60" ID="{60A217BF-ED09-49C9-81EF-F6E446079E48}" ShortID="862880671">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.971170212765957"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0352659574468085"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.43234042553192"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>254836__waxsocks__fireworks-display-60.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="254836__waxsocks__fireworks-display-60" ID="{60A217BF-ED09-49C9-81EF-F6E446079E48}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="synthe" ID="{9905F023-D288-4667-88DF-BD1264841F5D}" ShortID="1058005019">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Audio 9_13-05" ID="{8BB78AAE-73F6-41F2-BE2C-D509787EA8BF}" ShortID="221948904" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Audio 9_13-05" ID="{763A4468-A50A-442B-B942-462BDA44746B}" ShortID="224590200">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.132720364741641"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.519551671732523"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Audio 9_13-05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Audio 9_13-05" ID="{763A4468-A50A-442B-B942-462BDA44746B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Audio 9_13-07" ID="{D2FC8795-19A1-406B-A670-1598AD5D531E}" ShortID="823773345" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Audio 9_13-07" ID="{89BD82E5-1CD7-4DE0-B7FC-1BAA887ED36E}" ShortID="583218620">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0885866261398176"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.281626139817629"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.055531914893617"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Audio 9_13-07.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Audio 9_13-07" ID="{89BD82E5-1CD7-4DE0-B7FC-1BAA887ED36E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Audio 9_16-01" ID="{B0ADCBD5-AAC2-488C-A296-6CE14136BDDB}" ShortID="647107901" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Audio 9_16-01" ID="{FCEB5A87-629B-45FA-9B78-473D5CD25498}" ShortID="849351966">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.152522796352584"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.95737588652482"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.718128166160081"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Audio 9_16-01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Audio 9_16-01" ID="{FCEB5A87-629B-45FA-9B78-473D5CD25498}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Audio 9_19-03" ID="{DC48937F-8112-46D0-B981-AD31435065EE}" ShortID="282395045" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Audio 9_19-03" ID="{F0FD4E01-7DD5-4067-BA4F-B74846EDAC2F}" ShortID="344958854">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0386398176291793"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.412158054711246"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.115919452887538"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Audio 9_19-03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Audio 9_19-03" ID="{F0FD4E01-7DD5-4067-BA4F-B74846EDAC2F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Audio 9_19-05" ID="{FB186355-9DF1-42AF-BC0A-7ECACDB091CB}" ShortID="228794117" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Audio 9_19-05" ID="{6F7974F1-110B-46E6-A888-D1D51D088417}" ShortID="468374459">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.10531914893617"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.218161094224924"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.497758358662614"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Audio 9_19-05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Audio 9_19-05" ID="{6F7974F1-110B-46E6-A888-D1D51D088417}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Audio 9_19-10" ID="{6F02CB13-F44A-43D5-B060-A74AF5D90523}" ShortID="1036628980" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Audio 9_19-10" ID="{9F85D2DD-7862-4C9C-A844-28022A4CC129}" ShortID="981675640">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0823404255319148"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.61951367781155"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0666565349544073"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Audio 9_19-10.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Audio 9_19-10" ID="{9F85D2DD-7862-4C9C-A844-28022A4CC129}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="firefly_pop_2-01" ID="{FD7BA6DE-D10A-4AC7-A675-BD0927B5801D}" ShortID="570099804" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="firefly_pop_2-01" ID="{F8BCAE8D-88E9-4BB8-8821-9B1B5DFD79EA}" ShortID="566809419">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.165877659574468"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.674281914893617"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0753989361702128"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>firefly_pop_2-01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="firefly_pop_2-01" ID="{F8BCAE8D-88E9-4BB8-8821-9B1B5DFD79EA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

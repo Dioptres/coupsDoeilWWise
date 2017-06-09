@@ -6,11 +6,11 @@
 				<SoundcasterSession Name="New Soundcaster Session" ID="{773BFB03-0F39-4A20-ADBB-3BAE2DC68519}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="AMBIANCE" ID="{327B7F19-5776-4B9C-9130-56C2832B551C}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+							<ObjectRef Name="MUSIC" ID="{0721A261-C5C6-4445-9941-0D30EA56789E}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Chanteur_regard" ID="{82F134A5-E7CA-4B4B-B507-D381E8901246}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<ObjectRef Name="AMBIANCE" ID="{4830E9EF-EFC2-4B02-BFD3-30D867A0ADA2}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
@@ -26,12 +26,16 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Lampiste_luciole" ID="{3A9172FF-45E8-4D5D-91D3-C18A4281CEF1}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
-							<Position X="2" Y="0"/>
+							<ObjectRef Name="Bass_fill" ID="{3D146BBD-14E0-461F-A1B2-051A3E97F0B2}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Step_rumeur" ID="{72B18749-81AC-4148-A8C7-5F0C52CB8EAB}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
 							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Chanteur_fixe" ID="{CF013F8E-610F-4000-9532-C4CD227DB1F5}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Lampiste_regard" ID="{7FA945B1-9796-4446-93E1-DC78CC95A28D}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
@@ -40,6 +44,22 @@
 						<Module>
 							<ObjectRef Name="AMBIANCE" ID="{4830E9EF-EFC2-4B02-BFD3-30D867A0ADA2}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
 							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Chanteur_regard" ID="{82F134A5-E7CA-4B4B-B507-D381E8901246}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Flute_fill" ID="{0141D782-7CA4-4DE4-A050-E7D05D30A49C}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Guit_fill" ID="{FF6ABE96-8DEA-406C-B6C5-3491C5EC5230}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Uku_fill" ID="{569020A4-A9E0-4798-9D39-56EEAA474F32}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="4" Y="2"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
