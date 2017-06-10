@@ -927,6 +927,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<BlendContainer Name="Agitateur déplace" ID="{4BE75DC2-0E28-40D2-B5C9-80E90236E1ED}" ShortID="1026583597">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -935,6 +942,27 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="agitateur move-01" ID="{EEF89BFE-1E3A-4162-9C90-4514BA973DC6}" ShortID="1066846547" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="agitateur move-01" ID="{297F9625-8B96-4CEA-AC45-8506E661DE70}" ShortID="361574137">
+													<Language>SFX</Language>
+													<AudioFile>agitateur move-01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="agitateur move-01" ID="{297F9625-8B96-4CEA-AC45-8506E661DE70}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</BlendContainer>
 								<Sound Name="Agitateur_regard" ID="{A55B05C6-9580-4D8F-94AB-68B946D56942}" ShortID="59501751" Type="SoundFX">
 									<PropertyList>
@@ -976,7 +1004,14 @@
 										<ActiveSource Name="agitateur peur2" ID="{38A06D3D-B14C-4632-89EC-6DCF77BC1933}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Agitateur_plante" ID="{36A599C5-03AD-4671-9E21-AAFA30051F28}" ShortID="533834460" Type="SoundFX">
+								<BlendContainer Name="Agitateur_plante" ID="{EF98375C-A507-4EC8-BB58-ECD58CEF81F2}" ShortID="877280691">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -985,7 +1020,74 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
 										</Reference>
 									</ReferenceList>
-								</Sound>
+									<ChildrenList>
+										<Sound Name="Agitateur_plant" ID="{36A599C5-03AD-4671-9E21-AAFA30051F28}" ShortID="533834460" Type="SoundFX">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{4B2FF78B-6F89-45F3-9BD8-3EF02D13CD24}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="agitateur plante" ID="{E4102A83-19F7-4631-ACDB-763E99302B2E}" ShortID="1047314579">
+													<Language>SFX</Language>
+													<AudioFile>agitateur plante.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="agitateur plante" ID="{E4102A83-19F7-4631-ACDB-763E99302B2E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="cric1" ID="{87A6A48B-3B09-43D5-B252-E73B0B7E3630}" ShortID="941528413" Type="SoundFX">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{F5D1A41D-9455-4FF4-A877-20F3FF2C8CB4}">
+																<PropertyList>
+																	<Property Name="Max" Type="Real64" Value="12"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-17</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{4B2FF78B-6F89-45F3-9BD8-3EF02D13CD24}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="cric1" ID="{34882CE9-3239-4D56-9FF4-9CE2366CA760}" ShortID="401566711">
+													<Language>SFX</Language>
+													<AudioFile>cric1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="cric1" ID="{34882CE9-3239-4D56-9FF4-9CE2366CA760}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<RandomSequenceContainer Name="foule" ID="{8902396C-2230-4145-9362-5488AB8A9C09}" ShortID="592999808">
@@ -997,6 +1099,103 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="yeah1" ID="{8B931D42-DE7B-4662-86A3-0BE4D5208AEF}" ShortID="391678887" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="yeah1" ID="{DEE5DD58-E06D-4BDC-B973-63B4206785B8}" ShortID="571239519">
+											<Language>SFX</Language>
+											<AudioFile>yeah1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="yeah1" ID="{DEE5DD58-E06D-4BDC-B973-63B4206785B8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="yeah2" ID="{5D0473C1-CB3A-466F-ADF6-B25E55D8D325}" ShortID="392736725" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="yeah2" ID="{6FFE5504-D176-47EB-A953-CB8CAADD9098}" ShortID="418268758">
+											<Language>SFX</Language>
+											<AudioFile>yeah2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="yeah2" ID="{6FFE5504-D176-47EB-A953-CB8CAADD9098}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="yeah3" ID="{D9EA1099-0BE8-4AF1-BE02-F1E98F3E9C20}" ShortID="498877459" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="yeah3" ID="{5E4A849E-1A05-4EA7-8B00-E0C2A47B63E4}" ShortID="484058987">
+											<Language>SFX</Language>
+											<AudioFile>yeah3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="yeah3" ID="{5E4A849E-1A05-4EA7-8B00-E0C2A47B63E4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="yeah4" ID="{D9B6F7C1-D32B-4ED8-80AF-3DE09864F42C}" ShortID="593272755" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="yeah4" ID="{D96CA37F-F6CA-43CB-A3F4-14E4E6CBF801}" ShortID="366924033">
+											<Language>SFX</Language>
+											<AudioFile>yeah4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="yeah4" ID="{D96CA37F-F6CA-43CB-A3F4-14E4E6CBF801}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="yeah5" ID="{AB75C372-1B37-49AF-A4B9-6488168A2FBD}" ShortID="296646654" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="yeah5" ID="{71613584-D9EC-42A6-A60C-80D73AA6AA93}" ShortID="51187252">
+											<Language>SFX</Language>
+											<AudioFile>yeah5.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="yeah5" ID="{71613584-D9EC-42A6-A60C-80D73AA6AA93}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
@@ -2061,6 +2260,15 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="scene jardinier" ID="{6F2B9CC7-02ED-4B43-B598-7B83A7E7F20C}" ShortID="986235330">
+									<Language>SFX</Language>
+									<AudioFile>scene jardinier.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="scene jardinier" ID="{6F2B9CC7-02ED-4B43-B598-7B83A7E7F20C}" Platform="Linked"/>
+							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Scene4_furie" ID="{E5AB54C4-E263-42C5-8089-D6B223CB360C}" ShortID="717828433" Type="SoundFX">
 							<ReferenceList>
