@@ -21,6 +21,14 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="ambiance_nuit_provisoire" ID="{7647B29A-1A4D-49E0-89D7-F2432AEEA7A2}" ShortID="154806229" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -30,13 +38,13 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="ambiance_nuit_provisoire" ID="{580EDA83-5661-4B19-A99E-32B3D3939B46}" ShortID="689877777">
+								<AudioFileSource Name="ambiance" ID="{59477AB4-27D5-473C-B78A-6F9110F1B4CA}" ShortID="883328243">
 									<Language>SFX</Language>
-									<AudioFile>ambiance_nuit_provisoire.wav</AudioFile>
+									<AudioFile>ambiance.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="ambiance_nuit_provisoire" ID="{580EDA83-5661-4B19-A99E-32B3D3939B46}" Platform="Linked"/>
+								<ActiveSource Name="ambiance" ID="{59477AB4-27D5-473C-B78A-6F9110F1B4CA}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -56,69 +64,19 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<BlendContainer Name="Lampiste_fixe" ID="{A0516A5A-593A-40EE-B50A-75F2550EECEF}" ShortID="94855701">
+								<RandomSequenceContainer Name="Lampiste_regard" ID="{9A76E3C6-36B3-4E33-8232-14BE48C42221}" ShortID="474213377">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
+										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
-												<Value>False</Value>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Pop_firefly" ID="{F2941FBE-4032-4F55-981E-2E3412AA62D4}" ShortID="473026737" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Pop_firefly" ID="{8CAE3060-D350-4828-86F5-D4D8CB617DB4}" ShortID="387881753">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="3.37888817122594"/>
-														<Property Name="LoopEnd" Type="Real64" Value="1.78672112462006"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Pop_firefly.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Pop_firefly" ID="{8CAE3060-D350-4828-86F5-D4D8CB617DB4}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Firefly_life" ID="{2B81ADBE-F881-4FE3-9C33-3FEA877DFB2E}" ShortID="755205111" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Firefly_life" ID="{0C388280-E50C-47D8-A30C-92C2667D132F}" ShortID="1038739226">
-													<Language>SFX</Language>
-													<AudioFile>Firefly_life.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Firefly_life" ID="{0C388280-E50C-47D8-A30C-92C2667D132F}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</BlendContainer>
-								<RandomSequenceContainer Name="Lampiste_regard" ID="{9A76E3C6-36B3-4E33-8232-14BE48C42221}" ShortID="474213377">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -222,6 +180,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="TP lampiste" ID="{46FA0854-6850-41D4-95C8-6A677E311BF7}" ShortID="171198877">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.719534737417942"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0909756564551422"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.873917669584244"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>TP lampiste.wav</AudioFile>
 												</AudioFileSource>
@@ -331,37 +294,6 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="firefly_light4" ID="{6348AE42-C4A5-4D6A-9502-1051DEC4D52B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Lampadaire_Off" ID="{BB5F47E2-9175-4FEE-9543-A54E52D8B483}" ShortID="954387047">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{4B2FF78B-6F89-45F3-9BD8-3EF02D13CD24}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="rumeur_rire" ID="{BB633C1B-FDBF-4226-958E-1CFD141C9E57}" ShortID="883936854" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{4B2FF78B-6F89-45F3-9BD8-3EF02D13CD24}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="rumeur_rire" ID="{CFCD456E-9F54-4A20-BD25-089C0F15423D}" ShortID="754949504">
-													<Language>SFX</Language>
-													<AudioFile>rumeur_rire.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="rumeur_rire" ID="{CFCD456E-9F54-4A20-BD25-089C0F15423D}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -714,7 +646,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="Chanteur_psositif" ID="{3AA07CA0-1139-4480-B87C-E4CDA53B2577}" ShortID="26655988">
+								<RandomSequenceContainer Name="Chanteur_positif" ID="{3AA07CA0-1139-4480-B87C-E4CDA53B2577}" ShortID="26655988">
 									<PropertyList>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
@@ -932,6 +864,11 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -998,48 +935,48 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
 										</Reference>
 									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="portefee_interract1" ID="{6DDC58E7-9EDA-45A9-B0FC-8639243E593E}" ShortID="1015753988" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{4B2FF78B-6F89-45F3-9BD8-3EF02D13CD24}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="portefee_interract1" ID="{83BC7E0D-754E-46AD-918F-38EB1AB446B9}" ShortID="64631276">
-													<Language>SFX</Language>
-													<AudioFile>portefee_interract1.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="portefee_interract1" ID="{83BC7E0D-754E-46AD-918F-38EB1AB446B9}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="portefee_direction" ID="{402E3CA4-9A32-4EA0-BD74-66F6CFF634BB}" ShortID="16329215" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{4B2FF78B-6F89-45F3-9BD8-3EF02D13CD24}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="portefee_direction" ID="{93462567-05C6-484E-87EB-2200E25F7CAD}" ShortID="350688120">
-													<Language>SFX</Language>
-													<AudioFile>portefee_direction.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="portefee_direction" ID="{93462567-05C6-484E-87EB-2200E25F7CAD}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
 								</BlendContainer>
-								<RandomSequenceContainer Name="Agitateur Regard" ID="{3BC09799-4E27-4AF4-AAAC-E94C6CEF9DBD}" ShortID="744146894">
+								<Sound Name="Agitateur_regard" ID="{A55B05C6-9580-4D8F-94AB-68B946D56942}" ShortID="59501751" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{33F4DCF4-DAB8-4E76-94FD-2253354D2919}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="227"/>
+															<Property Name="Min" Type="Real64" Value="-354"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{4B2FF78B-6F89-45F3-9BD8-3EF02D13CD24}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="agitateur peur2" ID="{38A06D3D-B14C-4632-89EC-6DCF77BC1933}" ShortID="146775290">
+											<Language>SFX</Language>
+											<AudioFile>agitateur peur2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="agitateur peur2" ID="{38A06D3D-B14C-4632-89EC-6DCF77BC1933}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Agitateur_plante" ID="{36A599C5-03AD-4671-9E21-AAFA30051F28}" ShortID="533834460" Type="SoundFX">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -1048,49 +985,19 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
 										</Reference>
 									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="portefee_interract2" ID="{0563B35B-CDDB-4199-9D04-3DB8D43806C2}" ShortID="350983250" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{4B2FF78B-6F89-45F3-9BD8-3EF02D13CD24}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="portefee_interract2" ID="{66AC4369-2642-49DD-9346-33622265730C}" ShortID="277898054">
-													<Language>SFX</Language>
-													<AudioFile>portefee_interract2.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="portefee_interract2" ID="{66AC4369-2642-49DD-9346-33622265730C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="portefee_interract3" ID="{A19A84E6-4F46-4619-88D6-C16882C470C0}" ShortID="61107964" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{4B2FF78B-6F89-45F3-9BD8-3EF02D13CD24}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="portefee_interract3" ID="{8FBF7AE3-E039-4785-B1AC-16901E4C8191}" ShortID="144249802">
-													<Language>SFX</Language>
-													<AudioFile>portefee_interract3.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="portefee_interract3" ID="{8FBF7AE3-E039-4785-B1AC-16901E4C8191}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
+						<RandomSequenceContainer Name="foule" ID="{8902396C-2230-4145-9362-5488AB8A9C09}" ShortID="592999808">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Scene4_Furie" ID="{1EE40950-7873-44C8-A450-9310DDB75B9D}" ShortID="334209650">
@@ -1108,26 +1015,15 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="rumeur_déplacement" ID="{BCBC1034-B7FB-4BEC-9747-84B041DCED51}" ShortID="388161054" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="rumeur_déplacement" ID="{0BB6F359-8305-4842-8CC1-B2DDE6DC2DE0}" ShortID="354414129">
-											<Language>SFX</Language>
-											<AudioFile>rumeur_déplacement.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="rumeur_déplacement" ID="{0BB6F359-8305-4842-8CC1-B2DDE6DC2DE0}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<RandomSequenceContainer Name="Rumeur_regard" ID="{5C3463D2-DD5D-4660-B6EF-883F133338AE}" ShortID="226965362">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -1209,6 +1105,7 @@
 										<Sound Name="rumeur_moving" ID="{0D954061-F788-410C-977C-607014080253}" ShortID="172636254" Type="SoundFX">
 											<PropertyList>
 												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
 														<Value>1</Value>
@@ -1245,6 +1142,11 @@
 										</Sound>
 										<RandomSequenceContainer Name="New Random Container" ID="{E99E507A-862D-4D1B-9427-A05C199F20D9}" ShortID="1014923473">
 											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -1300,6 +1202,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="rumeur_step3" ID="{431E325D-762F-4B4C-A7F4-5E3CB828D119}" ShortID="430623291" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -1319,6 +1228,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="rumeur_step1" ID="{EEC03C9D-795F-4340-8B32-8E551EBF5C7B}" ShortID="43809806" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -1362,11 +1278,199 @@
 								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
+						<Sound Name="champi pousse" ID="{674A1211-BFA0-455E-BFF1-813D06C048B6}" ShortID="221094271" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="champi pousse" ID="{F1054FA6-52CA-40E1-98AF-68A866463A35}" ShortID="558918881">
+									<Language>SFX</Language>
+									<AudioFile>champi pousse.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="champi pousse" ID="{F1054FA6-52CA-40E1-98AF-68A866463A35}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="champi degonfle" ID="{14101240-3F8B-4E8B-816F-B33CBE205EFE}" ShortID="638652459" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5C2A3F25-2398-4B15-ADEE-F513285650E5}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-227"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="champi retrecit" ID="{2A17E659-40DD-41AA-9F49-D7D8D5A2EC97}" ShortID="323483227">
+									<Language>SFX</Language>
+									<AudioFile>champi retrecit.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="champi retrecit" ID="{2A17E659-40DD-41AA-9F49-D7D8D5A2EC97}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="champi flash" ID="{63B2F561-8F33-4C14-8113-7C267BFEEEDA}" ShortID="290848539" Type="SoundFX">
+							<PropertyList>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{4B2FF78B-6F89-45F3-9BD8-3EF02D13CD24}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="flash champi" ID="{037AC124-5879-40AE-8CA2-E596D0D7605C}" ShortID="353291272">
+									<Language>SFX</Language>
+									<AudioFile>flash champi.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="flash champi" ID="{037AC124-5879-40AE-8CA2-E596D0D7605C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<BlendContainer Name="Lampadaire_off" ID="{93F46F6F-AA95-4C60-80B0-791F201F9BCD}" ShortID="1006667191">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{7B97D6DB-E802-4CD8-81F0-298BBD09339E}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{4B2FF78B-6F89-45F3-9BD8-3EF02D13CD24}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="rumeur_rire" ID="{BB633C1B-FDBF-4226-958E-1CFD141C9E57}" ShortID="883936854" Type="SoundFX">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{568EEC70-8D23-4CCC-BA2F-F1BB4B0297EA}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="25"/>
+															<Property Name="Min" Type="Real64" Value="-76"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{4B2FF78B-6F89-45F3-9BD8-3EF02D13CD24}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="rumeur_rire" ID="{CFCD456E-9F54-4A20-BD25-089C0F15423D}" ShortID="754949504">
+											<Language>SFX</Language>
+											<AudioFile>rumeur_rire.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="rumeur_rire" ID="{CFCD456E-9F54-4A20-BD25-089C0F15423D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="lampe off" ID="{D80341F6-8693-4DB8-A9AE-0160270A570F}" ShortID="479011010" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CF991DF0-C7AE-4F32-BE65-A17263A86FCF}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="25"/>
+															<Property Name="Min" Type="Real64" Value="-76"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="lampe off" ID="{2CF0F355-F306-4AEA-91EB-0CF3D4CE3E5B}" ShortID="930836435">
+											<Language>SFX</Language>
+											<AudioFile>lampe off.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="lampe off" ID="{2CF0F355-F306-4AEA-91EB-0CF3D4CE3E5B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Scene5_feux" ID="{738345E7-87C3-4C51-9C26-983407D806A8}" ShortID="742477154">
 					<ChildrenList>
 						<BlendContainer Name="Feux artifice" ID="{22200468-0ADB-419C-810D-A94C2CDC98B1}" ShortID="519099222">
+							<PropertyList>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -1850,8 +1954,154 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
+						<Sound Name="luciole fail" ID="{470AABC8-335B-4796-938D-C7474E85DA05}" ShortID="251936188" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D9F38463-4508-4726-94F1-3E27236FB92B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="25"/>
+													<Property Name="Min" Type="Real64" Value="-202"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RenderEffect0" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Gain (Custom)" ID="{816CD38B-D7E9-4C67-B43E-4BC0DC2C3939}" ShortID="177140957" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+											<PropertyList>
+												<Property Name="FullBandGain" Type="Real32" Value="24"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="luciole fail" ID="{3385FEE4-B952-43C3-9096-CC76F6B99F1B}" ShortID="843694432">
+									<Language>SFX</Language>
+									<AudioFile>luciole fail.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="luciole fail" ID="{3385FEE4-B952-43C3-9096-CC76F6B99F1B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
+				<ActorMixer Name="cartons scenes" ID="{837D08BB-C553-4768-8114-8667979481F1}" ShortID="904855114">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Scene1_lampiste" ID="{FBE1580B-D591-451E-A0C3-D9445849AE7D}" ShortID="911343064" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="scene lampiste" ID="{35BCAFB0-292D-4909-BF81-99508AFCA0D2}" ShortID="184735489">
+									<Language>SFX</Language>
+									<AudioFile>scene lampiste.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="scene lampiste" ID="{35BCAFB0-292D-4909-BF81-99508AFCA0D2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Scene2_musiciens" ID="{ECD36A66-ED98-4618-9780-3D08F0837E88}" ShortID="420130956" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="scene musiciens" ID="{53987208-C47A-48CB-9DCD-8FC51944605A}" ShortID="310554914">
+									<Language>SFX</Language>
+									<AudioFile>scene musiciens.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="scene musiciens" ID="{53987208-C47A-48CB-9DCD-8FC51944605A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Scene3_jardinier" ID="{6E1AC14A-43F1-482C-B516-859407C1FE73}" ShortID="411152660" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+								</Reference>
+							</ReferenceList>
+						</Sound>
+						<Sound Name="Scene4_furie" ID="{E5AB54C4-E263-42C5-8089-D6B223CB360C}" ShortID="717828433" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="scene rumeur" ID="{EDF6C9AF-AF03-44EE-ADE8-A108AD3E614C}" ShortID="38697691">
+									<Language>SFX</Language>
+									<AudioFile>scene rumeur.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="scene rumeur" ID="{EDF6C9AF-AF03-44EE-ADE8-A108AD3E614C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Scene5_feux" ID="{EFE83C3E-43CB-4175-930A-9A7418B4968B}" ShortID="752227845" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="scene feux" ID="{4B2ED367-2889-43EF-8FB2-74765775A25A}" ShortID="913057764">
+									<Language>SFX</Language>
+									<AudioFile>scene feux.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="scene feux" ID="{4B2ED367-2889-43EF-8FB2-74765775A25A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -30,8 +30,8 @@
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Step_rumeur" ID="{72B18749-81AC-4148-A8C7-5F0C52CB8EAB}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
-							<Position X="2" Y="1"/>
+							<ObjectRef Name="Champi_flash" ID="{47DECC38-8CF4-40CF-B742-02B1B594B633}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Chanteur_fixe" ID="{CF013F8E-610F-4000-9532-C4CD227DB1F5}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
@@ -121,9 +121,9 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Percu_intro" ID="{FE344379-3145-4A9E-9095-97DA14D16B50}"/>
+						<CurrentStateRef Name="Percu_jeu" ID="{B99525C8-481B-4A8D-BFF5-D2C39151DB49}"/>
 						<CurrentStateRef Name="Guitare_isplaying" ID="{5B010C88-C1CB-488B-A617-9371FDCF3C41}"/>
-						<CurrentStateRef Name="Uku_notplaying" ID="{6D29632D-385C-49F3-A451-F1240FA0B422}"/>
+						<CurrentStateRef Name="Uku_isplaying" ID="{B290B6F5-61B4-4BBC-96EA-612B7851E8C0}"/>
 						<CurrentStateRef Name="Flute_isplaying" ID="{F8D50641-96EA-4ECB-B2DF-D2ABD03E51A3}"/>
 						<CurrentStateRef Name="Percu" ID="{4DA17545-0801-4878-8929-8BAEB127AD06}"/>
 						<CurrentStateRef Name="Bass_isplaying" ID="{7B663229-0FC3-49E5-B2EB-BF9C96039B96}"/>

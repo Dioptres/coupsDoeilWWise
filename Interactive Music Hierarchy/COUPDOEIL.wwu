@@ -3,964 +3,14 @@
 	<InteractiveMusic>
 		<WorkUnit Name="COUPDOEIL" ID="{3A995CFB-15AA-4EDE-A2B9-2FEEC12B8849}" OwnerID="{6B1341DE-AE1B-4699-A0B3-3FB212A35E56}" PersistMode="Nested">
 			<ChildrenList>
-				<MusicSwitchContainer Name="Music_anciennemethode_test" ID="{B2EA77D8-7018-4252-B988-9DA2AF475037}" ShortID="681195122">
-					<PropertyList>
-						<Property Name="Tempo" Type="Real64" Value="110"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<MusicSegment Name="trans1" ID="{BEED0C2A-8751-4B7B-8787-7B3FC444BCB7}" ShortID="880947732">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<MusicTrack Name="trans1" ID="{CFBE7F9A-6D3E-4091-86B7-93EE3874D5EE}" ShortID="240639683">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="trans1" ID="{AB3812B9-9011-454E-85B9-062BBE0C1648}" ShortID="678207386">
-											<Language>SFX</Language>
-											<AudioFile>trans1.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{D89D57D9-04E4-40D9-B6CD-2471220CD73B}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
-									<SequenceList>
-										<MusicTrackSequence Name="" ID="{0674A793-A999-4113-BFA9-832A7FDA1374}">
-											<ClipList>
-												<MusicClip Name="trans1" ID="{3A05569D-F194-4DC5-9BDB-F66A6DAEA2EA}">
-													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="2181.8125"/>
-														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-													</PropertyList>
-													<AudioSourceRef Name="trans1" ID="{AB3812B9-9011-454E-85B9-062BBE0C1648}"/>
-												</MusicClip>
-											</ClipList>
-										</MusicTrackSequence>
-									</SequenceList>
-								</MusicTrack>
-							</ChildrenList>
-							<CueList>
-								<MusicCue Name="Entry Cue" ID="{07B3E0DB-F8C1-4F4D-8EB9-F6E099D1422E}"/>
-								<MusicCue Name="Exit Cue" ID="{7ADD5DD7-180A-4DFB-91C6-55FEFFF139EF}">
-									<PropertyList>
-										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="2181.8125"/>
-									</PropertyList>
-								</MusicCue>
-							</CueList>
-						</MusicSegment>
-						<Folder Name="2" ID="{5158FA35-3F8E-4476-9EF1-5278BCD93EB4}" ShortID="1000046938">
-							<ChildrenList>
-								<MusicSegment Name="Bass Flute" ID="{04940CD4-8A3B-4548-B4F0-62785D5F0AA9}" ShortID="414888130">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="128727.270833333"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<MusicTrack Name="Bass Flute" ID="{6FCF87FA-BCFB-4676-8397-22C8B7C0CAA0}" ShortID="298158149">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Bass Flute" ID="{5794545E-3F6E-4F25-B471-D132067CFCB2}" ShortID="250122959">
-													<Language>SFX</Language>
-													<AudioFile>Bass Flute.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{1F6724C1-7F24-4029-BB56-0DD18C091FF0}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{94A81EEC-52EA-4D77-9D0A-1712A0C5699B}">
-													<ClipList>
-														<MusicClip Name="Bass Flute" ID="{04FFD719-AC4F-4478-B6AD-ECF3E697E00A}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="128727.270833333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Bass Flute" ID="{5794545E-3F6E-4F25-B471-D132067CFCB2}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-									</ChildrenList>
-									<CueList>
-										<MusicCue Name="Entry Cue" ID="{6F5E6D11-5069-46C5-81A5-2A0E5AFE415B}"/>
-										<MusicCue Name="Exit Cue" ID="{3A056999-702B-4F0F-A716-6EAF2D7EE016}">
-											<PropertyList>
-												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="128727.270833333"/>
-											</PropertyList>
-										</MusicCue>
-									</CueList>
-								</MusicSegment>
-								<MusicSegment Name="Basse Uku" ID="{302CA3AD-9E1B-4895-8C0B-AD004165F9F7}" ShortID="917588726">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="128727.270833333"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<MusicTrack Name="Basse Uku" ID="{1CAD32AA-796B-4F1D-B170-5407A2611A50}" ShortID="409756385">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Basse Uku" ID="{43A001F4-3D3B-4504-A47F-E0B1ED1E34CA}" ShortID="695257535">
-													<Language>SFX</Language>
-													<AudioFile>Basse Uku.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{8184C69A-2CC6-4384-85C1-F6280E785B73}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{2A468158-6A39-4CA3-A7DC-E7EA3E20207B}">
-													<ClipList>
-														<MusicClip Name="Basse Uku" ID="{4CB4A8F2-96F0-4AB8-92E5-A3C7E3AFCF9A}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="128727.270833333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Basse Uku" ID="{43A001F4-3D3B-4504-A47F-E0B1ED1E34CA}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-									</ChildrenList>
-									<CueList>
-										<MusicCue Name="Entry Cue" ID="{15D063DF-C771-4519-AC10-55EDB835D7F2}"/>
-										<MusicCue Name="Exit Cue" ID="{EFDAE5CD-0773-4E0E-8D6F-2365055C63A5}">
-											<PropertyList>
-												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="128727.270833333"/>
-											</PropertyList>
-										</MusicCue>
-									</CueList>
-								</MusicSegment>
-								<MusicSegment Name="Flute Guit" ID="{C2ECAAA0-2F24-48EB-AB46-3EDE8D61E2BA}" ShortID="1069664482">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="128727.270833333"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<MusicTrack Name="Flute Guit" ID="{34F6D926-0784-4A53-A6B7-D40EA2113DF3}" ShortID="168143771">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Flute Guit" ID="{F0332C88-5D38-4068-816A-6A4DDA8F00D8}" ShortID="864552340">
-													<Language>SFX</Language>
-													<AudioFile>Flute Guit.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{4584AA47-F781-485B-B3D8-66AB54B34795}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{250A4701-77B0-4878-BE20-09C6185FF538}">
-													<ClipList>
-														<MusicClip Name="Flute Guit" ID="{25DBA12E-B55D-4389-A31F-2C461A65B7FD}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="128727.270833333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Flute Guit" ID="{F0332C88-5D38-4068-816A-6A4DDA8F00D8}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-									</ChildrenList>
-									<CueList>
-										<MusicCue Name="Entry Cue" ID="{A3259882-31FB-4EB2-ADC4-7EC578ABF010}"/>
-										<MusicCue Name="Exit Cue" ID="{AC782234-55EF-4B82-8A49-DD5B67CB3CD4}">
-											<PropertyList>
-												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="128727.270833333"/>
-											</PropertyList>
-										</MusicCue>
-									</CueList>
-								</MusicSegment>
-								<MusicSegment Name="Flute Uku" ID="{D6290B79-A25A-45DF-9C4C-2B3417BDC789}" ShortID="770493950">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="128727.270833333"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<MusicTrack Name="Flute Uku" ID="{0994CAE8-D619-4549-8C6E-0C21CC240FEE}" ShortID="501067804">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Flute Uku" ID="{59B429ED-7D35-4A9F-B71A-4CB64FFE99B5}" ShortID="57411044">
-													<Language>SFX</Language>
-													<AudioFile>Flute Uku.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{8B7F4098-7705-4CD6-B05A-771EFADC561C}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{47B5D832-1942-419F-846F-39F74153241C}">
-													<ClipList>
-														<MusicClip Name="Flute Uku" ID="{3F7778AC-0576-48E8-BDDC-D435E268A3A6}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="128727.270833333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Flute Uku" ID="{59B429ED-7D35-4A9F-B71A-4CB64FFE99B5}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-									</ChildrenList>
-									<CueList>
-										<MusicCue Name="Entry Cue" ID="{FC5A0CF6-8855-4B99-91D5-D6FC6D4391D6}"/>
-										<MusicCue Name="Exit Cue" ID="{83211D4C-53F2-44E1-833F-5B8F32B0B407}">
-											<PropertyList>
-												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="128727.270833333"/>
-											</PropertyList>
-										</MusicCue>
-									</CueList>
-								</MusicSegment>
-								<MusicSegment Name="Guit Basse" ID="{40A382FD-848C-493D-97DB-76404E33010B}" ShortID="591033370">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="128727.270833333"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<MusicTrack Name="Guit Basse" ID="{FFC558B8-46F7-4543-B3E8-224F65D6CFCD}" ShortID="191160249">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Guit Basse" ID="{96E18DEA-88CA-4B3E-821F-924D10B9BCFD}" ShortID="1036106985">
-													<Language>SFX</Language>
-													<AudioFile>Guit Basse.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{8693C01F-2283-426C-98FA-7FE245108F22}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{2352BA3A-72F2-4F07-BABA-587FE6A6B190}">
-													<ClipList>
-														<MusicClip Name="Guit Basse" ID="{0AA6E269-BFF3-4C60-83E8-B638953CE1DA}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="128727.270833333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Guit Basse" ID="{96E18DEA-88CA-4B3E-821F-924D10B9BCFD}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-									</ChildrenList>
-									<CueList>
-										<MusicCue Name="Entry Cue" ID="{80F08D56-C81C-4BBA-B76E-55C41AF0CE7D}"/>
-										<MusicCue Name="Exit Cue" ID="{CDC04A4D-917A-4CEA-8EAB-F9383E00E25C}">
-											<PropertyList>
-												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="128727.270833333"/>
-											</PropertyList>
-										</MusicCue>
-									</CueList>
-								</MusicSegment>
-								<MusicSegment Name="Guit Uku" ID="{6F255BA1-EC4E-4C3D-8BCE-848C9F42CC8A}" ShortID="505496974">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="128727.270833333"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<MusicTrack Name="Guit Uku" ID="{DDCB6017-CE79-4393-8A83-E8A1664679FC}" ShortID="778655526">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Guit Uku" ID="{E583DA45-5872-427A-9731-AC89A6F218AE}" ShortID="489861887">
-													<Language>SFX</Language>
-													<AudioFile>Guit Uku.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{333AC03F-B8FB-43E5-BD6C-154FF62FE5F3}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{CBFC1D96-1734-4211-9014-9EF64D8B927C}">
-													<ClipList>
-														<MusicClip Name="Guit Uku" ID="{3822B366-2059-4ACD-8484-9BF05225C567}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="128727.270833333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Guit Uku" ID="{E583DA45-5872-427A-9731-AC89A6F218AE}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-									</ChildrenList>
-									<CueList>
-										<MusicCue Name="Entry Cue" ID="{662CCAE3-3B43-449D-8221-A64B80C54491}"/>
-										<MusicCue Name="Exit Cue" ID="{96A53955-A445-4D34-8BF1-865CB7770671}">
-											<PropertyList>
-												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="128727.270833333"/>
-											</PropertyList>
-										</MusicCue>
-									</CueList>
-								</MusicSegment>
-							</ChildrenList>
-						</Folder>
-						<Folder Name="3" ID="{DC75962E-606A-4121-9846-96DABC7C46F9}" ShortID="704831328">
-							<ChildrenList>
-								<MusicSegment Name="Basse Flute Uku" ID="{40DEC042-2104-4D14-85B8-8FABD9E2C4E0}" ShortID="330156960">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="128727.270833333"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<MusicTrack Name="Basse Flute Uku" ID="{C943F437-915B-4A4A-8F0B-02F90785C522}" ShortID="583760993">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Basse Flute Uku" ID="{ADAC411E-7205-4699-8F9C-0E6C6F7918E9}" ShortID="365321187">
-													<Language>SFX</Language>
-													<AudioFile>Basse Flute Uku.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{40A9CCBA-FD36-46A7-8D02-DCE8DCC992F8}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{8DF29787-CCF1-40D4-B25B-AC147534EFEC}">
-													<ClipList>
-														<MusicClip Name="Basse Flute Uku" ID="{EAB014F9-AF10-4490-8B08-AB11A2BD3487}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="128727.270833333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Basse Flute Uku" ID="{ADAC411E-7205-4699-8F9C-0E6C6F7918E9}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-									</ChildrenList>
-									<CueList>
-										<MusicCue Name="Entry Cue" ID="{0F5C5AA5-4838-441F-86F6-D9F9C8D076A4}"/>
-										<MusicCue Name="Exit Cue" ID="{7F673133-BB11-4C80-9BB5-FB5DE2E0CC06}">
-											<PropertyList>
-												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="128727.270833333"/>
-											</PropertyList>
-										</MusicCue>
-									</CueList>
-								</MusicSegment>
-								<MusicSegment Name="Flute Guit Uku" ID="{BC2EF4F4-BD39-4BC2-93C4-EACEB0CB1E19}" ShortID="829325168">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="128727.270833333"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<MusicTrack Name="Flute Guit Uku" ID="{A2ED9825-8A82-4ACC-B3E2-8B017C75D0AE}" ShortID="217710635">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Flute Guit Uku" ID="{227E7303-D451-4A9B-AA07-16BBEBECCBED}" ShortID="307827392">
-													<Language>SFX</Language>
-													<AudioFile>Flute Guit Uku.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{B832687A-37CA-4A5A-9D61-696D56092F8F}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{F0D8099A-859F-4B21-B4AB-AFFAE01C5AA0}">
-													<ClipList>
-														<MusicClip Name="Flute Guit Uku" ID="{E88BF454-DCFA-42A2-A058-55AA0FA5552A}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="128727.270833333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Flute Guit Uku" ID="{227E7303-D451-4A9B-AA07-16BBEBECCBED}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-									</ChildrenList>
-									<CueList>
-										<MusicCue Name="Entry Cue" ID="{23AD2ED8-BE88-470F-A7AF-E1CFF44BBFB8}"/>
-										<MusicCue Name="Exit Cue" ID="{4EF98B70-AE2F-4D6A-908C-F834612375C0}">
-											<PropertyList>
-												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="128727.270833333"/>
-											</PropertyList>
-										</MusicCue>
-									</CueList>
-								</MusicSegment>
-								<MusicSegment Name="Guit basse flute" ID="{25152320-7C7E-4F07-B292-DF833EFC58EA}" ShortID="211574710">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="128727.270833333"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<MusicTrack Name="Guit basse flute" ID="{7DD2283F-EB06-4FBE-952C-120C6C33D535}" ShortID="264262555">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Guit basse flute" ID="{E830FF60-CA3E-4415-A104-83D0413F7167}" ShortID="279625184">
-													<Language>SFX</Language>
-													<AudioFile>Guit basse flute.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{2C0CA80B-E7CB-42EB-9505-1467745088D7}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{E2E2D18F-8B0D-4769-9A37-92556A5B789E}">
-													<ClipList>
-														<MusicClip Name="Guit basse flute" ID="{E0F48302-B662-4BEA-BAFD-B42233663DE1}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="128727.270833333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Guit basse flute" ID="{E830FF60-CA3E-4415-A104-83D0413F7167}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-									</ChildrenList>
-									<CueList>
-										<MusicCue Name="Entry Cue" ID="{6DDA4435-262B-4CFF-BC09-54F74C1C8E06}"/>
-										<MusicCue Name="Exit Cue" ID="{3F9C6431-FF74-4F47-B2BC-82C371DBD744}">
-											<PropertyList>
-												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="128727.270833333"/>
-											</PropertyList>
-										</MusicCue>
-									</CueList>
-								</MusicSegment>
-								<MusicSegment Name="Guit Basse Uku" ID="{BCDE5617-879A-47BC-9B7A-DE19ED8F2AD3}" ShortID="482231120">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="128727.270833333"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<MusicTrack Name="Guit Basse Uku" ID="{EC33207D-C182-46CD-AFB2-0F86F8E9FF41}" ShortID="943015233">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Guit Basse Uku" ID="{6240BC87-605C-41DB-BA01-28ECA43B357E}" ShortID="393474039">
-													<Language>SFX</Language>
-													<AudioFile>Guit Basse Uku.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{877BB16C-7E7A-4745-B3F4-3F60649BE8A4}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{262CA3FA-8D88-4D17-A8E2-EB9225017ADB}">
-													<ClipList>
-														<MusicClip Name="Guit Basse Uku" ID="{D64615BE-D673-496C-BDC4-7AA3969B51E9}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="128727.270833333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Guit Basse Uku" ID="{6240BC87-605C-41DB-BA01-28ECA43B357E}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-									</ChildrenList>
-									<CueList>
-										<MusicCue Name="Entry Cue" ID="{AEF37C34-DBDE-42B0-AECC-B1257DB7B48F}"/>
-										<MusicCue Name="Exit Cue" ID="{4AAAFE20-DD74-4285-8D79-06711C2F56E0}">
-											<PropertyList>
-												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="128727.270833333"/>
-											</PropertyList>
-										</MusicCue>
-									</CueList>
-								</MusicSegment>
-							</ChildrenList>
-						</Folder>
-						<MusicSegment Name="Ensemble" ID="{D576A6C5-0D91-43FB-AA2A-9313425A49E3}" ShortID="380294385">
-							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="128727.270833333"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<MusicTrack Name="Ensemble" ID="{C518E130-7A1A-474A-906E-10D236BF1AFB}" ShortID="305198492">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Ensemble" ID="{B352BEB9-70D0-45F8-B8D6-D4A1445BA63D}" ShortID="754781223">
-											<Language>SFX</Language>
-											<AudioFile>Ensemble.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{5576A01E-734D-4989-951B-CF9B68DD417F}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
-									<SequenceList>
-										<MusicTrackSequence Name="" ID="{C8C80AA1-3738-44AD-ACB7-9BAEC774C3AB}">
-											<ClipList>
-												<MusicClip Name="Ensemble" ID="{45C24226-23DC-4C66-9FEE-207F8910AA1E}">
-													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="128727.270833333"/>
-														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-													</PropertyList>
-													<AudioSourceRef Name="Ensemble" ID="{B352BEB9-70D0-45F8-B8D6-D4A1445BA63D}"/>
-												</MusicClip>
-											</ClipList>
-										</MusicTrackSequence>
-									</SequenceList>
-								</MusicTrack>
-							</ChildrenList>
-							<CueList>
-								<MusicCue Name="Entry Cue" ID="{777A4B58-89D4-4D11-99FB-06B6AA94367F}"/>
-								<MusicCue Name="Exit Cue" ID="{42BC4032-9B36-4EF8-869E-B9B81872D48B}">
-									<PropertyList>
-										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="128727.270833333"/>
-									</PropertyList>
-								</MusicCue>
-							</CueList>
-						</MusicSegment>
-						<MusicSegment Name="Percu" ID="{AC4AC8F5-36FF-414A-80AC-85D1E340F3F1}" ShortID="288565709">
-							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="30545.4583333333"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-								</Reference>
-							</ReferenceList>
-							<CueList>
-								<MusicCue Name="Entry Cue" ID="{46246529-08DD-4763-B928-2928F1BCCD98}"/>
-								<MusicCue Name="Exit Cue" ID="{4EB0C427-3695-47A3-A86B-DED989736974}">
-									<PropertyList>
-										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="30545.4583333333"/>
-									</PropertyList>
-								</MusicCue>
-							</CueList>
-						</MusicSegment>
-					</ChildrenList>
-					<TransitionList>
-						<MusicTransition Name="Root" ID="{F6B5BF95-146F-4092-9803-015231B44EA5}">
-							<PropertyList>
-								<Property Name="IsFolder" Type="bool" Value="True"/>
-							</PropertyList>
-							<ChildrenList>
-								<MusicTransition Name="Transition" ID="{FF12D4C2-AE25-4198-8258-1BFA8E7EFBAF}">
-									<PropertyList>
-										<Property Name="ExitSourceAt" Type="int16" Value="1"/>
-										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
-										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
-									</PropertyList>
-									<TransitionInfo/>
-								</MusicTransition>
-								<MusicTransition Name="Transition" ID="{2E8D5356-E0A0-4FE5-B711-1335C460180E}">
-									<PropertyList>
-										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
-									</PropertyList>
-									<TransitionInfo/>
-								</MusicTransition>
-								<MusicTransition Name="Transition" ID="{CFF19BCC-ACAC-4DCA-8CE7-CBD842025BA8}">
-									<PropertyList>
-										<Property Name="ExitSourceAt" Type="int16" Value="1"/>
-										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
-										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
-									</PropertyList>
-									<TransitionInfo>
-										<TransitionObjectRef Name="trans1" ID="{BEED0C2A-8751-4B7B-8787-7B3FC444BCB7}" WorkUnitID="{3A995CFB-15AA-4EDE-A2B9-2FEEC12B8849}"/>
-									</TransitionInfo>
-								</MusicTransition>
-							</ChildrenList>
-							<TransitionInfo/>
-						</MusicTransition>
-					</TransitionList>
-					<ArgumentList>
-						<ArgumentRef Name="state_anciennemethode" ID="{C1D76EFF-A6E2-4892-87ED-64F18004CE03}"/>
-						<ArgumentRef Name="music" ID="{805D8588-DE87-4A15-BC74-DA47A5FE18DA}"/>
-					</ArgumentList>
-					<EntryList>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Guitare_Bass_Ukulele" ID="{7EE2E6F5-9420-4DA0-B1AC-86DD0D2D214A}"/>
-								<PathElementRef Name="music" ID="{805D8588-DE87-4A15-BC74-DA47A5FE18DA}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Guit Basse Uku" ID="{BCDE5617-879A-47BC-9B7A-DE19ED8F2AD3}" WorkUnitID="{3A995CFB-15AA-4EDE-A2B9-2FEEC12B8849}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Ensemble" ID="{245623CF-0469-4BD9-AB35-FFBE4CADC415}"/>
-								<PathElementRef Name="music" ID="{805D8588-DE87-4A15-BC74-DA47A5FE18DA}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Ensemble" ID="{D576A6C5-0D91-43FB-AA2A-9313425A49E3}" WorkUnitID="{3A995CFB-15AA-4EDE-A2B9-2FEEC12B8849}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Percu" ID="{4DA17545-0801-4878-8929-8BAEB127AD06}"/>
-								<PathElementRef Name="music" ID="{805D8588-DE87-4A15-BC74-DA47A5FE18DA}"/>
-							</Path>
-							<AudioNodeInfo>
-								<NoObject Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Bass_Uku" ID="{09DBAEB3-D626-488B-A877-A2953B422DCC}"/>
-								<PathElementRef Name="music" ID="{805D8588-DE87-4A15-BC74-DA47A5FE18DA}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Basse Uku" ID="{302CA3AD-9E1B-4895-8C0B-AD004165F9F7}" WorkUnitID="{3A995CFB-15AA-4EDE-A2B9-2FEEC12B8849}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Guitare_Bass" ID="{8EF0E077-A52D-462A-B141-27F997E664E3}"/>
-								<PathElementRef Name="music" ID="{805D8588-DE87-4A15-BC74-DA47A5FE18DA}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Guit Basse" ID="{40A382FD-848C-493D-97DB-76404E33010B}" WorkUnitID="{3A995CFB-15AA-4EDE-A2B9-2FEEC12B8849}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Guitare_Uku" ID="{8A98C278-0F3B-4F5B-ACDF-92EB7E3B5550}"/>
-								<PathElementRef Name="music" ID="{805D8588-DE87-4A15-BC74-DA47A5FE18DA}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Guit Uku" ID="{6F255BA1-EC4E-4C3D-8BCE-848C9F42CC8A}" WorkUnitID="{3A995CFB-15AA-4EDE-A2B9-2FEEC12B8849}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Bass_Flute" ID="{D7BEBFA2-0832-4853-96CC-8BAD32305138}"/>
-								<PathElementRef Name="music" ID="{805D8588-DE87-4A15-BC74-DA47A5FE18DA}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Bass Flute" ID="{04940CD4-8A3B-4548-B4F0-62785D5F0AA9}" WorkUnitID="{3A995CFB-15AA-4EDE-A2B9-2FEEC12B8849}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Bass_Flute_Uku" ID="{F01963E3-B652-4558-9490-7D8117E89A95}"/>
-								<PathElementRef Name="music" ID="{805D8588-DE87-4A15-BC74-DA47A5FE18DA}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Basse Flute Uku" ID="{40DEC042-2104-4D14-85B8-8FABD9E2C4E0}" WorkUnitID="{3A995CFB-15AA-4EDE-A2B9-2FEEC12B8849}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Bass_Guitare_Flute" ID="{3AAEDFA8-9363-421C-9CF2-9A123F9D8164}"/>
-								<PathElementRef Name="music" ID="{805D8588-DE87-4A15-BC74-DA47A5FE18DA}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Guit basse flute" ID="{25152320-7C7E-4F07-B292-DF833EFC58EA}" WorkUnitID="{3A995CFB-15AA-4EDE-A2B9-2FEEC12B8849}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Guitare_Flute" ID="{418DCBBA-0BF7-442C-A77B-0BC19BAACA74}"/>
-								<PathElementRef Name="music" ID="{805D8588-DE87-4A15-BC74-DA47A5FE18DA}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Flute Guit" ID="{C2ECAAA0-2F24-48EB-AB46-3EDE8D61E2BA}" WorkUnitID="{3A995CFB-15AA-4EDE-A2B9-2FEEC12B8849}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Guitare_Flute_Uku" ID="{FD0478C2-7D77-4FAE-A866-EA68AD0A1BDA}"/>
-								<PathElementRef Name="music" ID="{805D8588-DE87-4A15-BC74-DA47A5FE18DA}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Flute Guit Uku" ID="{BC2EF4F4-BD39-4BC2-93C4-EACEB0CB1E19}" WorkUnitID="{3A995CFB-15AA-4EDE-A2B9-2FEEC12B8849}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Uku_Flute" ID="{DF1D025A-4FB1-43B6-BA05-F6103A46C41F}"/>
-								<PathElementRef Name="music" ID="{805D8588-DE87-4A15-BC74-DA47A5FE18DA}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Flute Uku" ID="{D6290B79-A25A-45DF-9C4C-2B3417BDC789}" WorkUnitID="{3A995CFB-15AA-4EDE-A2B9-2FEEC12B8849}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-					</EntryList>
-				</MusicSwitchContainer>
-				<MusicSwitchContainer Name="Foule" ID="{1377744B-166A-49D7-A6E9-8193B225ED50}" ShortID="572744630">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-						</Reference>
-					</ReferenceList>
-					<TransitionList>
-						<MusicTransition Name="Root" ID="{E1AFBC66-4C70-4185-B02D-3B22A5E7B9A5}">
-							<PropertyList>
-								<Property Name="IsFolder" Type="bool" Value="True"/>
-							</PropertyList>
-							<ChildrenList>
-								<MusicTransition Name="Transition" ID="{30D6E1C9-13A8-45F2-B87B-B37B46CE495D}">
-									<TransitionInfo/>
-								</MusicTransition>
-							</ChildrenList>
-							<TransitionInfo/>
-						</MusicTransition>
-					</TransitionList>
-				</MusicSwitchContainer>
-				<MusicSwitchContainer Name="Musique" ID="{E664DD95-3E60-4ACA-ADF1-B26FF6751AB3}" ShortID="823848738">
-					<PropertyList>
-						<Property Name="Mode" Type="int16" Value="1"/>
-						<Property Name="Tempo" Type="Real64" Value="110"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="MUSIC" ID="{626C5628-E2E1-4474-934B-8861FEE9AE67}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
-						</Reference>
-					</ReferenceList>
-					<TransitionList>
-						<MusicTransition Name="Root" ID="{BAA42737-BD1A-4E0A-8A8A-3A2CAE836650}">
-							<PropertyList>
-								<Property Name="IsFolder" Type="bool" Value="True"/>
-							</PropertyList>
-							<ChildrenList>
-								<MusicTransition Name="Transition" ID="{2F1F2CE3-825A-445B-9E8C-388AA8838B7B}">
-									<TransitionInfo/>
-								</MusicTransition>
-							</ChildrenList>
-							<TransitionInfo/>
-						</MusicTransition>
-					</TransitionList>
-					<ArgumentList>
-						<ArgumentRef Name="Bass" ID="{DD9788C8-3DEC-49AB-9422-DEEB3EA6A4B5}"/>
-						<ArgumentRef Name="Flute" ID="{335451CA-C778-480D-8AE7-05EA1C655C1F}"/>
-						<ArgumentRef Name="Guitare" ID="{AA3EDC64-34DD-41E4-BA48-D936FD757187}"/>
-						<ArgumentRef Name="Percu" ID="{DCB1EA91-6EC3-41C2-B1CC-89E00DDF4A77}"/>
-						<ArgumentRef Name="Uku" ID="{373216AB-D380-4656-AECA-96CA29C6DC29}"/>
-					</ArgumentList>
-				</MusicSwitchContainer>
 				<MusicPlaylistContainer Name="musiqueofthegame" ID="{E76D5056-7C6E-4B45-BFE7-115B4FD2C328}" ShortID="543551232">
 					<PropertyList>
 						<Property Name="Tempo" Type="Real64" Value="110"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -973,7 +23,7 @@
 					<ChildrenList>
 						<MusicSegment Name="groupe" ID="{5AD7D1C9-61BF-40E3-8146-03F0033D2EC7}" ShortID="967634617">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="150000"/>
+								<Property Name="EndPosition" Type="Real64" Value="257454.543560606"/>
 								<Property Name="Tempo" Type="Real64" Value="110"/>
 							</PropertyList>
 							<ReferenceList>
@@ -995,9 +45,9 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Flute stem" ID="{48764D4D-8280-4FEE-8D89-ACF9F806CB03}" ShortID="155530218">
+										<AudioFileSource Name="flute mixed" ID="{6954E8D1-C79D-4FBA-BD7E-EEBEE402EA2C}" ShortID="570463607">
 											<Language>SFX</Language>
-											<AudioFile>Flute stem.wav</AudioFile>
+											<AudioFile>flute mixed.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<StateInfo>
@@ -1028,13 +78,13 @@
 									<SequenceList>
 										<MusicTrackSequence Name="" ID="{750ECC09-11AE-4F8C-8C6B-DE42E82C96F1}">
 											<ClipList>
-												<MusicClip Name="Flute stem" ID="{29AD86D9-F7D8-4FFA-8A0C-9529B9897B8C}">
+												<MusicClip Name="flute mixed" ID="{65916763-0FDA-4B43-A4BA-04EC6203CF28}">
 													<PropertyList>
 														<Property Name="EndTrimOffset" Type="Real64" Value="128727.270833333"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
-													<AudioSourceRef Name="Flute stem" ID="{48764D4D-8280-4FEE-8D89-ACF9F806CB03}"/>
+													<AudioSourceRef Name="flute mixed" ID="{6954E8D1-C79D-4FBA-BD7E-EEBEE402EA2C}"/>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
@@ -1050,9 +100,9 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Bass stem" ID="{5870D85C-1B81-4F25-8253-131A3992C13A}" ShortID="917593175">
+										<AudioFileSource Name="Basse mixed" ID="{52474565-20BF-4BB5-8C4D-77AF691B81DF}" ShortID="316403954">
 											<Language>SFX</Language>
-											<AudioFile>Bass stem.wav</AudioFile>
+											<AudioFile>Basse mixed.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<StateInfo>
@@ -1077,25 +127,33 @@
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
+											<ReferenceList/>
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
 									<SequenceList>
 										<MusicTrackSequence Name="" ID="{DB9F64BF-85B5-4041-8D01-B1161ED9971B}">
 											<ClipList>
-												<MusicClip Name="Bass stem" ID="{D4C66950-BF9C-44F3-99EB-EB2BC154CAA3}">
+												<MusicClip Name="Basse mixed" ID="{9DA8F87D-D37E-46CB-B418-F50FAF61B0D5}">
 													<PropertyList>
 														<Property Name="EndTrimOffset" Type="Real64" Value="128727.270833333"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
-													<AudioSourceRef Name="Bass stem" ID="{5870D85C-1B81-4F25-8253-131A3992C13A}"/>
+													<AudioSourceRef Name="Basse mixed" ID="{52474565-20BF-4BB5-8C4D-77AF691B81DF}"/>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
 									</SequenceList>
 								</MusicTrack>
 								<MusicTrack Name="Guit stem" ID="{C74F5ACE-E05D-41EC-ACA8-8CCFCA3EDC5F}" ShortID="316929207">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -1105,9 +163,9 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Guit stem" ID="{AAAA904D-97C1-4773-AA22-31632E808AE1}" ShortID="408438763">
+										<AudioFileSource Name="guit mixed" ID="{C292A279-C375-474D-BCC1-E33C31EC7171}" ShortID="416111686">
 											<Language>SFX</Language>
-											<AudioFile>Guit stem.wav</AudioFile>
+											<AudioFile>guit mixed.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<StateInfo>
@@ -1138,13 +196,13 @@
 									<SequenceList>
 										<MusicTrackSequence Name="" ID="{96040C02-9F73-472C-AEFE-1518865D99A5}">
 											<ClipList>
-												<MusicClip Name="Guit stem" ID="{7E82113B-AFEE-4729-891D-3345179AFA9E}">
+												<MusicClip Name="guit mixed" ID="{3B507297-14E7-422E-B0E6-E7436954A92B}">
 													<PropertyList>
 														<Property Name="EndTrimOffset" Type="Real64" Value="128727.270833333"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
-													<AudioSourceRef Name="Guit stem" ID="{AAAA904D-97C1-4773-AA22-31632E808AE1}"/>
+													<AudioSourceRef Name="guit mixed" ID="{C292A279-C375-474D-BCC1-E33C31EC7171}"/>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
@@ -1160,9 +218,9 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Uku Stem" ID="{FA4D9E63-A152-49D6-A38C-B2A006899795}" ShortID="826315874">
+										<AudioFileSource Name="uku mixed" ID="{092FBA8A-5E1A-461A-AF49-09E789A79644}" ShortID="699834116">
 											<Language>SFX</Language>
-											<AudioFile>Uku Stem.wav</AudioFile>
+											<AudioFile>uku mixed.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<StateInfo>
@@ -1193,13 +251,13 @@
 									<SequenceList>
 										<MusicTrackSequence Name="" ID="{489762B0-93A1-4E20-A7C6-52F7E79C7FE1}">
 											<ClipList>
-												<MusicClip Name="Uku Stem" ID="{53EF398C-D5DF-4579-A7FB-4E4BD93CBF25}">
+												<MusicClip Name="uku mixed" ID="{FE86F041-F80E-4BEA-9195-899B27A87CA0}">
 													<PropertyList>
 														<Property Name="EndTrimOffset" Type="Real64" Value="128727.25"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
-													<AudioSourceRef Name="Uku Stem" ID="{FA4D9E63-A152-49D6-A38C-B2A006899795}"/>
+													<AudioSourceRef Name="uku mixed" ID="{092FBA8A-5E1A-461A-AF49-09E789A79644}"/>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
@@ -1215,9 +273,9 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Percu stem" ID="{22756CEF-7A9C-41B3-8C47-62FCAC0A424A}" ShortID="673226129">
+										<AudioFileSource Name="percu mixed" ID="{966D3D1D-7998-4150-AFC7-DA8F4785EFF4}" ShortID="931142980">
 											<Language>SFX</Language>
-											<AudioFile>Percu stem.wav</AudioFile>
+											<AudioFile>percu mixed.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<StateInfo>
@@ -1248,19 +306,26 @@
 									<SequenceList>
 										<MusicTrackSequence Name="" ID="{17EFBB8B-7FEC-4DD9-B3D0-D7FD9D32E3BB}">
 											<ClipList>
-												<MusicClip Name="Percu stem" ID="{7103A506-5446-43B7-B331-C68503A319A0}">
+												<MusicClip Name="percu mixed" ID="{05A428CC-873D-4D21-B09B-6B0F6FD64C85}">
 													<PropertyList>
 														<Property Name="EndTrimOffset" Type="Real64" Value="128727.270833333"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
-													<AudioSourceRef Name="Percu stem" ID="{22756CEF-7A9C-41B3-8C47-62FCAC0A424A}"/>
+													<AudioSourceRef Name="percu mixed" ID="{966D3D1D-7998-4150-AFC7-DA8F4785EFF4}"/>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
 									</SequenceList>
 								</MusicTrack>
 								<MusicTrack Name="Percu" ID="{320FFAEF-E8A3-4330-894C-259A248297F8}" ShortID="447500093">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -1383,7 +448,7 @@
 								<MusicCue Name="Exit Cue" ID="{FE588036-C6DB-4BEB-BAA3-E234B63E49D6}">
 									<PropertyList>
 										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="128693.98345579"/>
+										<Property Name="TimeMs" Type="Real64" Value="128727.272727273"/>
 									</PropertyList>
 								</MusicCue>
 							</CueList>
