@@ -731,7 +731,7 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Chenteur_neutre" ID="{EC9D44A5-0B84-445D-B745-D2CE779CCB0D}" ShortID="723011190">
+								<RandomSequenceContainer Name="Chanteur_neutre" ID="{EC9D44A5-0B84-445D-B745-D2CE779CCB0D}" ShortID="723011190">
 									<PropertyList>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
@@ -890,6 +890,32 @@
 								</Sound>
 							</ChildrenList>
 						</ActorMixer>
+						<Sound Name="tournelune" ID="{7C3CFB5E-3EC4-4393-BBD1-2ABA1F93789D}" ShortID="305103161" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="tournelune" ID="{FA6F7209-7066-4186-A164-51D5A4771553}" ShortID="74626057">
+									<Language>SFX</Language>
+									<AudioFile>tournelune.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="tournelune" ID="{FA6F7209-7066-4186-A164-51D5A4771553}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Scene3_Jardinier" ID="{7D3DE6BB-B1FF-42E4-9832-A9FBBC33BBB5}" ShortID="836353051">

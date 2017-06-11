@@ -150,7 +150,7 @@
 								<Action Name="Play" ID="{D998CE06-6AC0-4750-BE71-EC7E291C1F8E}" ShortID="543861694" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{72D2970C-4F46-4194-8430-BFB57030E5E6}" Global="false">
-											<ObjectRef Name="Chanteur_regard" ID="{B9B06DD2-D4A2-4863-ABF6-906954EC3199}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+											<ObjectRef Name="Chanteur_neutre" ID="{EC9D44A5-0B84-445D-B745-D2CE779CCB0D}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -158,7 +158,13 @@
 						</Event>
 						<Event Name="Tournelune_switch" ID="{9C087EC3-6F10-4823-B002-7EAB932D4AC2}">
 							<ChildrenList>
-								<Action Name="Play" ID="{AF351E9D-3F26-43CC-AE3E-1A8EA402EFE0}" ShortID="592198087" Type="Play" Scope="One" Global="false"/>
+								<Action Name="Play" ID="{AF351E9D-3F26-43CC-AE3E-1A8EA402EFE0}" ShortID="592198087" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{9426AF44-5325-43AE-A830-D6FF5EE6DA3C}" Global="false">
+											<ObjectRef Name="tournelune" ID="{7C3CFB5E-3EC4-4393-BBD1-2ABA1F93789D}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Guit_fill" ID="{FF6ABE96-8DEA-406C-B6C5-3491C5EC5230}">
