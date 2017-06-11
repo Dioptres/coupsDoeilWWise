@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="75">
-	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\Actor-Mixer Hierarchy\COUPDOEIL.wwu" DateLow="3912127216" DateHigh="30597799"/>
+	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\Actor-Mixer Hierarchy\COUPDOEIL.wwu" DateLow="67623704" DateHigh="30597813"/>
 	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3975740518" DateHigh="30595405"/>
 	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="3850193338" DateHigh="30595405"/>
 	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="3850473354" DateHigh="30595405"/>
@@ -23,7 +23,7 @@
 	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="3854403578" DateHigh="30595405"/>
 	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="3854603590" DateHigh="30595405"/>
 	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\Effects\Factory McDSP Effects.wwu" DateLow="3852343461" DateHigh="30595405"/>
-	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\Events\Default Work Unit.wwu" DateLow="3915527411" DateHigh="30597799"/>
+	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\Events\Default Work Unit.wwu" DateLow="67673706" DateHigh="30597813"/>
 	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\Game Parameters\BUS CONTROLLER.wwu" DateLow="3975970532" DateHigh="30595405"/>
 	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\Game Parameters\Default Work Unit.wwu" DateLow="3975980532" DateHigh="30595405"/>
 	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="3854663593" DateHigh="30595405"/>
@@ -36,7 +36,7 @@
 	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\Queries\Default Work Unit.wwu" DateLow="3876834861" DateHigh="30595405"/>
 	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\Queries\Factory Queries.wwu" DateLow="3877334890" DateHigh="30595405"/>
 	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\SoundBanks\Default Work Unit.wwu" DateLow="590405250" DateHigh="30595406"/>
-	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="3961590045" DateHigh="30597799"/>
+	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="67713709" DateHigh="30597813"/>
 	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\States\Default Work Unit.wwu" DateLow="3864575055" DateHigh="30595628"/>
 	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\Switches\Default Work Unit.wwu" DateLow="598835733" DateHigh="30595406"/>
 	<ValidationCacheItem File="D:\projets\coupsDoeil_WWise\Triggers\Default Work Unit.wwu" DateLow="3877454897" DateHigh="30595405"/>

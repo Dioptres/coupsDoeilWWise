@@ -259,6 +259,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Agitateur_stopmarche" ID="{1408E6EA-9281-4B3D-9E15-D83494DA08B0}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{A4C53DC9-B212-41AC-B7C7-7522D487B4C9}" ShortID="1000195957" Type="Stop" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{C102E748-1A0E-4E12-A632-244104173323}" Global="false">
+											<ObjectRef Name="Agitateur déplace" ID="{4BE75DC2-0E28-40D2-B5C9-80E90236E1ED}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Scene4_Furie" ID="{A87BCC3B-27AE-4360-A2D8-34BB5257FFC5}" ShortID="181083011">
@@ -365,6 +376,39 @@
 									<ElementList>
 										<Element ID="{1B3060C1-0074-4BD6-A3FB-C38EB7443858}" Global="false">
 											<ObjectRef Name="champi degonfle" ID="{467846CD-C0D0-4C40-AE74-1108BE9E8B1D}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Champi_stopdegonfle" ID="{B1B264B2-66D6-47CD-9004-16D8E02ADEA6}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{91A36842-5BE3-4BC3-A4AC-F25E61A25BFC}" ShortID="199816002" Type="Stop" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{DF6AFF6E-E87F-40D8-A151-D62292382D9B}" Global="false">
+											<ObjectRef Name="champi degonfle" ID="{467846CD-C0D0-4C40-AE74-1108BE9E8B1D}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Champi_stopgonfle" ID="{C4399D5B-34C3-416A-953E-27BFD8676315}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{25789699-6DCD-4880-9AEA-17088D248898}" ShortID="692613458" Type="Stop" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{52F4D3B0-CD84-4DB1-A851-5435C8A4840C}" Global="false">
+											<ObjectRef Name="champi pousse" ID="{674A1211-BFA0-455E-BFF1-813D06C048B6}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Rumeur_stopmarche" ID="{C3856D36-F9D4-4DCF-99EA-23268817FABD}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{ACFAAFBA-4F8C-4DA7-B30C-A9EEA2A80F38}" ShortID="733116920" Type="Stop" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{1F4D6F0E-EE11-42FA-AF0C-AB339B2E4DA9}" Global="false">
+											<ObjectRef Name="Step_rumeur" ID="{DB5C89B9-E5A2-4E94-8338-42E568290FF1}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
 										</Element>
 									</ElementList>
 								</Action>

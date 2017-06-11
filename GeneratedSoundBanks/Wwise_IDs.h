@@ -23,6 +23,7 @@ namespace AK
         static const AkUniqueID CARTON_SCENE3 = 3503969068U;
         static const AkUniqueID CARTON_SCENE4 = 3503969067U;
         static const AkUniqueID CARTON_SCENE5 = 3503969066U;
+        static const AkUniqueID CHAMPI_ATTAQUE = 1854177399U;
         static const AkUniqueID CHAMPI_DEGONFLE = 339366856U;
         static const AkUniqueID CHAMPI_FLASH = 3268928720U;
         static const AkUniqueID CHAMPI_GONFLE = 3360254677U;

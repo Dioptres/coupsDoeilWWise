@@ -251,6 +251,10 @@
 							<ObjectRef Name="foule" ID="{5779D056-1A40-4A61-AB3F-6EDAA9666565}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
 							<Position X="3" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Agitateur_stopmarche" ID="{1408E6EA-9281-4B3D-9E15-D83494DA08B0}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="3" Y="1"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -357,6 +361,22 @@
 						<Module>
 							<ObjectRef Name="Rumeur_regard" ID="{F867E24A-CE0B-4708-BEE3-A7F87619FF6F}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
 							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Champi_degonfle" ID="{45DDB60E-AD76-45FE-9EF3-1E1271107B76}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Champi_stopdegonfle" ID="{B1B264B2-66D6-47CD-9004-16D8E02ADEA6}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Champi_stopgonfle" ID="{C4399D5B-34C3-416A-953E-27BFD8676315}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Rumeur_stopmarche" ID="{C3856D36-F9D4-4DCF-99EA-23268817FABD}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="3" Y="2"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
