@@ -327,7 +327,7 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Champi_degonfle" ID="{DC7EFF8C-0B8F-4FCE-9D51-F16B9456B029}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<ObjectRef Name="Champi_attaque" ID="{DC7EFF8C-0B8F-4FCE-9D51-F16B9456B029}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>

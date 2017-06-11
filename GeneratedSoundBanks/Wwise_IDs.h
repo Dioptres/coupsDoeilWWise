@@ -14,32 +14,35 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AGITATEUR_MARCHE = 2688714084U;
+        static const AkUniqueID AGITATEUR_PLANTE = 4280665010U;
         static const AkUniqueID AGITATEUR_REGARD = 2449017055U;
         static const AkUniqueID AMBIANCE = 2981377429U;
         static const AkUniqueID BASS_FILL = 3360699968U;
-        static const AkUniqueID BASS_MARCHE = 2271363949U;
-        static const AkUniqueID CHANTEUR_FIXE = 2843045782U;
-        static const AkUniqueID CHANTEUR_REGARD = 852897365U;
+        static const AkUniqueID CARTON_SCENE1 = 3503969070U;
+        static const AkUniqueID CARTON_SCENE2 = 3503969069U;
+        static const AkUniqueID CARTON_SCENE3 = 3503969068U;
+        static const AkUniqueID CARTON_SCENE4 = 3503969067U;
+        static const AkUniqueID CARTON_SCENE5 = 3503969066U;
+        static const AkUniqueID CHAMPI_DEGONFLE = 339366856U;
+        static const AkUniqueID CHAMPI_FLASH = 3268928720U;
+        static const AkUniqueID CHAMPI_GONFLE = 3360254677U;
+        static const AkUniqueID CHANTEUR_NEGATIF = 55309960U;
+        static const AkUniqueID CHANTEUR_NEUTRE = 1448544655U;
+        static const AkUniqueID CHANTEUR_POSITIF = 1332528068U;
         static const AkUniqueID FLUTE_FILL = 1503509175U;
-        static const AkUniqueID FLUTE_MARCHE = 915394794U;
         static const AkUniqueID FOULE = 4222617504U;
         static const AkUniqueID GUIT_FILL = 3984850850U;
-        static const AkUniqueID GUIT_MARCHE = 3036075691U;
-        static const AkUniqueID LAMPADAIRE_FIREWORK = 2890891367U;
         static const AkUniqueID LAMPADAIRE_OFF = 2841797443U;
         static const AkUniqueID LAMPADAIRE_ON = 3295927151U;
-        static const AkUniqueID LAMPISTE_LUCIOLE = 232325074U;
-        static const AkUniqueID LAMPISTE_OFF = 2780761060U;
         static const AkUniqueID LAMPISTE_REGARD = 2109565432U;
         static const AkUniqueID LAMPISTE_TP = 32667521U;
-        static const AkUniqueID LAMPISTE_TP_LOAD = 553049592U;
+        static const AkUniqueID LUCIOLE_FAIL = 4065118333U;
+        static const AkUniqueID LUCIOLE_FIREWORK = 571979622U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID RUMEUR_MARCHE = 3609129866U;
         static const AkUniqueID RUMEUR_REGARD = 505317385U;
-        static const AkUniqueID RUMEUR_REVEIL = 1058187699U;
-        static const AkUniqueID STEP_RUMEUR = 1135652546U;
+        static const AkUniqueID TOURNELUNE_SWITCH = 1886303237U;
         static const AkUniqueID UKU_FILL = 679765766U;
-        static const AkUniqueID UKU_MARCHE = 2637819543U;
     } // namespace EVENTS
 
     namespace STATES

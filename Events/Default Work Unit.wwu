@@ -274,12 +274,12 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Champi_degonfle" ID="{DC7EFF8C-0B8F-4FCE-9D51-F16B9456B029}">
+						<Event Name="Champi_attaque" ID="{DC7EFF8C-0B8F-4FCE-9D51-F16B9456B029}">
 							<ChildrenList>
 								<Action Name="Play" ID="{5929761D-392E-429D-89AC-0F249E03D385}" ShortID="976750451" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{61667091-C25A-41A3-9E61-81921B8ACA12}" Global="false">
-											<ObjectRef Name="champi degonfle" ID="{14101240-3F8B-4E8B-816F-B33CBE205EFE}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+											<ObjectRef Name="champi attaque" ID="{14101240-3F8B-4E8B-816F-B33CBE205EFE}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -354,6 +354,17 @@
 									<ElementList>
 										<Element ID="{B8420BBA-BB2F-4014-A556-028EB1A97F98}" Global="false">
 											<ObjectRef Name="Lampadaire_off" ID="{93F46F6F-AA95-4C60-80B0-791F201F9BCD}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Champi_degonfle" ID="{45DDB60E-AD76-45FE-9EF3-1E1271107B76}">
+							<ChildrenList>
+								<Action Name="Play" ID="{69597915-C54B-4973-A1B3-2F23374DD7B2}" ShortID="1059537405" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{1B3060C1-0074-4BD6-A3FB-C38EB7443858}" Global="false">
+											<ObjectRef Name="champi degonfle" ID="{467846CD-C0D0-4C40-AE74-1108BE9E8B1D}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
 										</Element>
 									</ElementList>
 								</Action>

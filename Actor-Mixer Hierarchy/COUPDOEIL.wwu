@@ -189,7 +189,7 @@
 												<AudioFileSource Name="TP lampiste" ID="{46FA0854-6850-41D4-95C8-6A677E311BF7}" ShortID="171198877">
 													<PropertyList>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.719534737417942"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0909756564551422"/>
+														<Property Name="TrimBegin" Type="Real64" Value="9.09756564551422E-02"/>
 														<Property Name="TrimEnd" Type="Real64" Value="0.873917669584244"/>
 													</PropertyList>
 													<Language>SFX</Language>
@@ -516,7 +516,7 @@
 												<AudioFileSource Name="bass1" ID="{56FFE511-F492-4277-9EDE-D1DE6C76E962}" ShortID="244665357">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.253899343544858"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.0813654266958425"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="8.13654266958425E-02"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>bass1.wav</AudioFile>
@@ -951,6 +951,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="portefee_directionbrut" ID="{8FA6B1AF-7D42-44D9-98C1-4A098B10841F}" ShortID="600111264" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -987,6 +994,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="agitateur move-01" ID="{EEF89BFE-1E3A-4162-9C90-4514BA973DC6}" ShortID="1066846547" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -1347,14 +1357,10 @@
 										<Sound Name="rumeur_moving" ID="{0D954061-F788-410C-977C-607014080253}" ShortID="172636254" Type="SoundFX">
 											<PropertyList>
 												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
 														<Value>1</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseMaxSoundPerInstance" Type="bool">
-													<ValueList>
-														<Value>True</Value>
 													</ValueList>
 												</Property>
 												<Property Name="Volume" Type="Real64">
@@ -1546,7 +1552,7 @@
 								<ActiveSource Name="champi pousse" ID="{F1054FA6-52CA-40E1-98AF-68A866463A35}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="champi degonfle" ID="{14101240-3F8B-4E8B-816F-B33CBE205EFE}" ShortID="638652459" Type="SoundFX">
+						<Sound Name="champi attaque" ID="{14101240-3F8B-4E8B-816F-B33CBE205EFE}" ShortID="638652459" Type="SoundFX">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -1717,6 +1723,33 @@
 								</Sound>
 							</ChildrenList>
 						</BlendContainer>
+						<Sound Name="champi degonfle" ID="{467846CD-C0D0-4C40-AE74-1108BE9E8B1D}" ShortID="1009977742" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{69CD2E1A-8374-42AB-B876-A837FDC5038C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="champidegonfle" ID="{009962C1-9EC8-453F-BFB5-A9D6ABAEE8EF}" ShortID="209167358">
+									<Language>SFX</Language>
+									<AudioFile>champidegonfle.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="champidegonfle" ID="{009962C1-9EC8-453F-BFB5-A9D6ABAEE8EF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Scene5_feux" ID="{738345E7-87C3-4C51-9C26-983407D806A8}" ShortID="742477154">
@@ -1896,7 +1929,7 @@
 												<AudioFileSource Name="254836__waxsocks__fireworks-display-32" ID="{FB78B18B-CD1F-42CC-B920-D720B8D5E0F6}" ShortID="735198366">
 													<PropertyList>
 														<Property Name="FadeOutDuration" Type="Real64" Value="1.76193009118541"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0806990881458967"/>
+														<Property Name="TrimBegin" Type="Real64" Value="8.06990881458967E-02"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>254836__waxsocks__fireworks-display-32.wav</AudioFile>
@@ -1942,7 +1975,7 @@
 												<AudioFileSource Name="254836__waxsocks__fireworks-display-46" ID="{7BC3D409-A38D-485F-B992-8DC13607ABBE}" ShortID="1052745879">
 													<PropertyList>
 														<Property Name="FadeOutDuration" Type="Real64" Value="1.09616261398176"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0699392097264438"/>
+														<Property Name="TrimBegin" Type="Real64" Value="6.99392097264438E-02"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>254836__waxsocks__fireworks-display-46.wav</AudioFile>
@@ -1965,7 +1998,7 @@
 												<AudioFileSource Name="254836__waxsocks__fireworks-display-48" ID="{CF81589D-C52D-4CEB-B693-400927F34F4C}" ShortID="1056765298">
 													<PropertyList>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.644407294832827"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0413297872340425"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.13297872340425E-02"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>254836__waxsocks__fireworks-display-48.wav</AudioFile>
@@ -2011,7 +2044,7 @@
 												<AudioFileSource Name="254836__waxsocks__fireworks-display-60" ID="{60A217BF-ED09-49C9-81EF-F6E446079E48}" ShortID="862880671">
 													<PropertyList>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.971170212765957"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0352659574468085"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.52659574468085E-02"/>
 														<Property Name="TrimEnd" Type="Real64" Value="1.43234042553192"/>
 													</PropertyList>
 													<Language>SFX</Language>
@@ -2076,7 +2109,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="Audio 9_13-07" ID="{89BD82E5-1CD7-4DE0-B7FC-1BAA887ED36E}" ShortID="583218620">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0885866261398176"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="8.85866261398176E-02"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.281626139817629"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.055531914893617"/>
 													</PropertyList>
@@ -2125,7 +2158,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="Audio 9_19-03" ID="{F0FD4E01-7DD5-4067-BA4F-B74846EDAC2F}" ShortID="344958854">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0386398176291793"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="3.86398176291793E-02"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.412158054711246"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.115919452887538"/>
 													</PropertyList>
@@ -2173,9 +2206,9 @@
 											<ChildrenList>
 												<AudioFileSource Name="Audio 9_19-10" ID="{9F85D2DD-7862-4C9C-A844-28022A4CC129}" ShortID="981675640">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0823404255319148"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="8.23404255319148E-02"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.61951367781155"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0666565349544073"/>
+														<Property Name="TrimBegin" Type="Real64" Value="6.66565349544073E-02"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Audio 9_19-10.wav</AudioFile>
@@ -2199,7 +2232,7 @@
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.165877659574468"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.674281914893617"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0753989361702128"/>
+														<Property Name="TrimBegin" Type="Real64" Value="7.53989361702128E-02"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>firefly_pop_2-01.wav</AudioFile>
