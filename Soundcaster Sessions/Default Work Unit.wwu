@@ -18,48 +18,20 @@
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Chanteur_fixe" ID="{CF013F8E-610F-4000-9532-C4CD227DB1F5}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
-							<Position X="1" Y="0"/>
+							<ObjectRef Name="Carton_scene1" ID="{66E312A2-CB4A-45C8-AB3A-EC9F5F5ACD4B}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Lampadaire_On" ID="{24AD6E99-08B5-42C2-8289-F18DC181FC5D}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Lampiste_tp" ID="{1EC1CC68-DD3E-478A-AB72-146657499787}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Bass_fill" ID="{3D146BBD-14E0-461F-A1B2-051A3E97F0B2}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
-							<Position X="1" Y="2"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Champi_flash" ID="{47DECC38-8CF4-40CF-B742-02B1B594B633}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
-							<Position X="2" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Chanteur_fixe" ID="{CF013F8E-610F-4000-9532-C4CD227DB1F5}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
-							<Position X="2" Y="2"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Lampiste_regard" ID="{7FA945B1-9796-4446-93E1-DC78CC95A28D}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
-							<Position X="3" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="AMBIANCE" ID="{4830E9EF-EFC2-4B02-BFD3-30D867A0ADA2}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
-							<Position X="3" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Chanteur_regard" ID="{82F134A5-E7CA-4B4B-B507-D381E8901246}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
-							<Position X="3" Y="2"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Flute_fill" ID="{0141D782-7CA4-4DE4-A050-E7D05D30A49C}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
-							<Position X="4" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Guit_fill" ID="{FF6ABE96-8DEA-406C-B6C5-3491C5EC5230}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
-							<Position X="4" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Uku_fill" ID="{569020A4-A9E0-4798-9D39-56EEAA474F32}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
-							<Position X="4" Y="2"/>
+							<Position X="2" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -121,12 +93,501 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Percu_intro" ID="{FE344379-3145-4A9E-9095-97DA14D16B50}"/>
+						<CurrentStateRef Name="Guitare_notplaying" ID="{8B128307-0306-40F5-ABE1-FE693B469512}"/>
+						<CurrentStateRef Name="Uku_notplaying" ID="{6D29632D-385C-49F3-A451-F1240FA0B422}"/>
+						<CurrentStateRef Name="Flute_notplaying" ID="{E2912BD8-623C-4FBE-A7A9-AE21B01ABF8E}"/>
+						<CurrentStateRef Name="Percu" ID="{4DA17545-0801-4878-8929-8BAEB127AD06}"/>
+						<CurrentStateRef Name="Bass_notplaying" ID="{4764B5C7-91E4-42B9-AD18-919BEE57A299}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="New Soundcaster Session_02" ID="{0EE52E5A-CB23-4A45-BAAE-917D908E3BFE}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="MUSIC" ID="{0721A261-C5C6-4445-9941-0D30EA56789E}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AMBIANCE" ID="{4830E9EF-EFC2-4B02-BFD3-30D867A0ADA2}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Carton_scene2" ID="{08907018-D336-403A-A3D6-D75AB4F1A6D6}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Bass_fill" ID="{3D146BBD-14E0-461F-A1B2-051A3E97F0B2}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Chanteur_positif" ID="{CF013F8E-610F-4000-9532-C4CD227DB1F5}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Chanteur_neutre" ID="{EC9D44A5-0B84-445D-B745-D2CE779CCB0D}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Flute_fill" ID="{0141D782-7CA4-4DE4-A050-E7D05D30A49C}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Tournelune_switch" ID="{9C087EC3-6F10-4823-B002-7EAB932D4AC2}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Guit_fill" ID="{FF6ABE96-8DEA-406C-B6C5-3491C5EC5230}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Chanteur_negatif" ID="{E5575CCF-17E5-4557-B0FE-ECD9EE127CC4}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Uku_fill" ID="{569020A4-A9E0-4798-9D39-56EEAA474F32}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Tournelune_switch" ID="{9C087EC3-6F10-4823-B002-7EAB932D4AC2}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MUSIC_VOLUME_OPTION" ID="{6CAC29EB-34ED-43E8-BAA7-761670F6B9CA}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFX_VOLUME_OPTION" ID="{FBEB664A-901E-43FC-8DDF-26FD0A857080}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="foule" ID="{9D1CA258-5465-46A5-B01A-4E5B593A0DE5}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="musiciens" ID="{29139CAB-6D2C-4A4A-B9A6-B5125BB8F465}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Freefall" ID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Percu_intro" ID="{FE344379-3145-4A9E-9095-97DA14D16B50}"/>
+						<CurrentStateRef Name="Guitare_notplaying" ID="{8B128307-0306-40F5-ABE1-FE693B469512}"/>
+						<CurrentStateRef Name="Uku_notplaying" ID="{6D29632D-385C-49F3-A451-F1240FA0B422}"/>
+						<CurrentStateRef Name="Flute_notplaying" ID="{E2912BD8-623C-4FBE-A7A9-AE21B01ABF8E}"/>
+						<CurrentStateRef Name="Percu" ID="{4DA17545-0801-4878-8929-8BAEB127AD06}"/>
+						<CurrentStateRef Name="Bass_notplaying" ID="{4764B5C7-91E4-42B9-AD18-919BEE57A299}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="New Soundcaster Session_03" ID="{C6AEB784-671B-43AA-8323-51EF9D72154D}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Agitateur_marche" ID="{DA9DC90D-1ED0-4A26-BEC8-FC25AAB3C83D}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Carton_scene3" ID="{84983898-B459-4536-A798-7E7B9F78F41E}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Agitateur_plante" ID="{C6DDF030-9749-4BD3-97E2-03FE32FE9AD8}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AMBIANCE" ID="{4830E9EF-EFC2-4B02-BFD3-30D867A0ADA2}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Agitateur_regard" ID="{6ED46D0A-E82E-431F-8699-2AC2B1CCDE39}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUSIC" ID="{0721A261-C5C6-4445-9941-0D30EA56789E}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="foule" ID="{5779D056-1A40-4A61-AB3F-6EDAA9666565}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MUSIC_VOLUME_OPTION" ID="{6CAC29EB-34ED-43E8-BAA7-761670F6B9CA}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFX_VOLUME_OPTION" ID="{FBEB664A-901E-43FC-8DDF-26FD0A857080}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="foule" ID="{9D1CA258-5465-46A5-B01A-4E5B593A0DE5}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="musiciens" ID="{29139CAB-6D2C-4A4A-B9A6-B5125BB8F465}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Freefall" ID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Percu_jeu" ID="{B99525C8-481B-4A8D-BFF5-D2C39151DB49}"/>
+						<CurrentStateRef Name="Guitare_notplaying" ID="{8B128307-0306-40F5-ABE1-FE693B469512}"/>
+						<CurrentStateRef Name="Uku_isplaying" ID="{B290B6F5-61B4-4BBC-96EA-612B7851E8C0}"/>
+						<CurrentStateRef Name="Flute_isplaying" ID="{F8D50641-96EA-4ECB-B2DF-D2ABD03E51A3}"/>
+						<CurrentStateRef Name="Percu" ID="{4DA17545-0801-4878-8929-8BAEB127AD06}"/>
+						<CurrentStateRef Name="Bass_notplaying" ID="{4764B5C7-91E4-42B9-AD18-919BEE57A299}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="New Soundcaster Session_04" ID="{CB2FC99D-F90F-42F5-914C-9778F89C9A8F}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="AMBIANCE" ID="{4830E9EF-EFC2-4B02-BFD3-30D867A0ADA2}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Champi_degonfle" ID="{DC7EFF8C-0B8F-4FCE-9D51-F16B9456B029}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Champi_gonfle" ID="{161C615B-8588-4987-A813-287670E4FE64}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Carton_scene4" ID="{20895675-9FD4-486D-850B-64E669D8C07C}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUSIC" ID="{0721A261-C5C6-4445-9941-0D30EA56789E}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Champi_flash" ID="{47DECC38-8CF4-40CF-B742-02B1B594B633}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Lampadaire_Off" ID="{0D9B705F-8264-42E2-A923-5242C88A0902}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Rumeur_marche" ID="{EC0295D2-64F1-41FD-BDE8-5088B9B48E50}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Rumeur_regard" ID="{F867E24A-CE0B-4708-BEE3-A7F87619FF6F}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MUSIC_VOLUME_OPTION" ID="{6CAC29EB-34ED-43E8-BAA7-761670F6B9CA}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFX_VOLUME_OPTION" ID="{FBEB664A-901E-43FC-8DDF-26FD0A857080}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="foule" ID="{9D1CA258-5465-46A5-B01A-4E5B593A0DE5}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="musiciens" ID="{29139CAB-6D2C-4A4A-B9A6-B5125BB8F465}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Freefall" ID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Percu_jeu" ID="{B99525C8-481B-4A8D-BFF5-D2C39151DB49}"/>
+						<CurrentStateRef Name="Guitare_isplaying" ID="{5B010C88-C1CB-488B-A617-9371FDCF3C41}"/>
+						<CurrentStateRef Name="Uku_notplaying" ID="{6D29632D-385C-49F3-A451-F1240FA0B422}"/>
+						<CurrentStateRef Name="Flute_notplaying" ID="{E2912BD8-623C-4FBE-A7A9-AE21B01ABF8E}"/>
+						<CurrentStateRef Name="Percu" ID="{4DA17545-0801-4878-8929-8BAEB127AD06}"/>
+						<CurrentStateRef Name="Bass_isplaying" ID="{7B663229-0FC3-49E5-B2EB-BF9C96039B96}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="New Soundcaster Session_05" ID="{CC476E08-8D1E-47DC-9DA0-4BC259E23E14}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Carton_scene5" ID="{8A796EF1-22F7-4AA2-8CAB-552234AAC760}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Tournelune_switch" ID="{9C087EC3-6F10-4823-B002-7EAB932D4AC2}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Luciole_Fail" ID="{29B4B95C-F068-4103-ACC1-5F9555C64B27}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AMBIANCE" ID="{4830E9EF-EFC2-4B02-BFD3-30D867A0ADA2}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Luciole_Firework" ID="{41F380E7-1CB8-4A46-A109-19D98DED4BF2}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUSIC" ID="{0721A261-C5C6-4445-9941-0D30EA56789E}" WorkUnitID="{11FE3DB3-A8FF-4AFA-B717-9D4DB7F86E36}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MUSIC_VOLUME_OPTION" ID="{6CAC29EB-34ED-43E8-BAA7-761670F6B9CA}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFX_VOLUME_OPTION" ID="{FBEB664A-901E-43FC-8DDF-26FD0A857080}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="foule" ID="{9D1CA258-5465-46A5-B01A-4E5B593A0DE5}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="musiciens" ID="{29139CAB-6D2C-4A4A-B9A6-B5125BB8F465}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Freefall" ID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Percu_jeu" ID="{B99525C8-481B-4A8D-BFF5-D2C39151DB49}"/>
 						<CurrentStateRef Name="Guitare_isplaying" ID="{5B010C88-C1CB-488B-A617-9371FDCF3C41}"/>
 						<CurrentStateRef Name="Uku_isplaying" ID="{B290B6F5-61B4-4BBC-96EA-612B7851E8C0}"/>
 						<CurrentStateRef Name="Flute_isplaying" ID="{F8D50641-96EA-4ECB-B2DF-D2ABD03E51A3}"/>
 						<CurrentStateRef Name="Percu" ID="{4DA17545-0801-4878-8929-8BAEB127AD06}"/>
 						<CurrentStateRef Name="Bass_isplaying" ID="{7B663229-0FC3-49E5-B2EB-BF9C96039B96}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="cartons" ID="{D0481E0E-EAA5-4735-BC5E-60CE1ADBFE3A}">
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MUSIC_VOLUME_OPTION" ID="{6CAC29EB-34ED-43E8-BAA7-761670F6B9CA}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFX_VOLUME_OPTION" ID="{FBEB664A-901E-43FC-8DDF-26FD0A857080}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="foule" ID="{9D1CA258-5465-46A5-B01A-4E5B593A0DE5}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="musiciens" ID="{29139CAB-6D2C-4A4A-B9A6-B5125BB8F465}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Freefall" ID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Percu_intro" ID="{FE344379-3145-4A9E-9095-97DA14D16B50}"/>
+						<CurrentStateRef Name="Guitare_notplaying" ID="{8B128307-0306-40F5-ABE1-FE693B469512}"/>
+						<CurrentStateRef Name="Uku_notplaying" ID="{6D29632D-385C-49F3-A451-F1240FA0B422}"/>
+						<CurrentStateRef Name="Flute_notplaying" ID="{E2912BD8-623C-4FBE-A7A9-AE21B01ABF8E}"/>
+						<CurrentStateRef Name="Percu" ID="{4DA17545-0801-4878-8929-8BAEB127AD06}"/>
+						<CurrentStateRef Name="Bass_notplaying" ID="{4764B5C7-91E4-42B9-AD18-919BEE57A299}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

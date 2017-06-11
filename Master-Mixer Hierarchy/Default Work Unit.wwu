@@ -9,7 +9,7 @@
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-15</Value>
 									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{C87CE0A6-61C0-417A-BD05-F418296D9483}" ShortID="948180304">

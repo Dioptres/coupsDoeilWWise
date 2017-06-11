@@ -38,17 +38,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Lampadaire_Off" ID="{0D9B705F-8264-42E2-A923-5242C88A0902}">
-							<ChildrenList>
-								<Action Name="Play" ID="{C83B6458-365A-4282-8550-F965EE1E6354}" ShortID="213566139" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{B8420BBA-BB2F-4014-A556-028EB1A97F98}" Global="false">
-											<ObjectRef Name="Lampadaire_off" ID="{93F46F6F-AA95-4C60-80B0-791F201F9BCD}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Carton_scene1" ID="{66E312A2-CB4A-45C8-AB3A-EC9F5F5ACD4B}">
 							<ChildrenList>
 								<Action Name="Play" ID="{08DED3DE-F5E6-407F-B800-63356C7D3E7F}" ShortID="449822485" Type="Play" Scope="One" Global="false">
@@ -134,7 +123,7 @@
 				</Folder>
 				<Folder Name="Scene2_Chef" ID="{6B60ED4F-78B3-4FE6-8FD9-D291DF08EC72}" ShortID="1056804919">
 					<ChildrenList>
-						<Event Name="Chanteur_fixe" ID="{CF013F8E-610F-4000-9532-C4CD227DB1F5}">
+						<Event Name="Chanteur_positif" ID="{CF013F8E-610F-4000-9532-C4CD227DB1F5}">
 							<ChildrenList>
 								<Action Name="Play" ID="{1B5EA607-3371-4222-967A-F9EE3A529C91}" ShortID="1012743428" Type="Play" Scope="One" Global="false">
 									<ElementList>
@@ -145,7 +134,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Chanteur_regard" ID="{82F134A5-E7CA-4B4B-B507-D381E8901246}">
+						<Event Name="Chanteur_neutre" ID="{82F134A5-E7CA-4B4B-B507-D381E8901246}">
 							<ChildrenList>
 								<Action Name="Play" ID="{D998CE06-6AC0-4750-BE71-EC7E291C1F8E}" ShortID="543861694" Type="Play" Scope="One" Global="false">
 									<ElementList>
@@ -211,6 +200,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Chanteur_negatif" ID="{E5575CCF-17E5-4557-B0FE-ECD9EE127CC4}">
+							<ChildrenList>
+								<Action Name="Play" ID="{A15B53C4-E44E-4282-AAC7-C65CF789E449}" ShortID="794838065" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{745BA891-9619-48A2-A324-6198DFA4247A}" Global="false">
+											<ObjectRef Name="Chanteur_fail" ID="{7E846AA1-B646-4BC5-8D04-884FD242B1E0}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Scene3_Jardinier" ID="{07328D67-432B-417C-A833-7020D83E2073}" ShortID="376400459">
@@ -242,7 +242,7 @@
 								<Action Name="Play" ID="{1818F133-ECA1-42E3-A402-B8D1162204E0}" ShortID="1004440289" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{5A0DB473-9FED-40DE-B84D-DC5B9073669D}" Global="false">
-											<ObjectRef Name="Agitateur_regard" ID="{A55B05C6-9580-4D8F-94AB-68B946D56942}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+											<ObjectRef Name="Agitateur_plante" ID="{EF98375C-A507-4EC8-BB58-ECD58CEF81F2}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -343,6 +343,17 @@
 									<ElementList>
 										<Element ID="{3F094DFC-DD41-4662-8566-3B41161DA1CD}" Global="false">
 											<ObjectRef Name="Rumeur_regard" ID="{5C3463D2-DD5D-4660-B6EF-883F133338AE}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Lampadaire_Off" ID="{0D9B705F-8264-42E2-A923-5242C88A0902}">
+							<ChildrenList>
+								<Action Name="Play" ID="{C83B6458-365A-4282-8550-F965EE1E6354}" ShortID="213566139" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{B8420BBA-BB2F-4014-A556-028EB1A97F98}" Global="false">
+											<ObjectRef Name="Lampadaire_off" ID="{93F46F6F-AA95-4C60-80B0-791F201F9BCD}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
 										</Element>
 									</ElementList>
 								</Action>
