@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationCache Version="1" SchemaVersion="75">
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Actor-Mixer Hierarchy\COUPDOEIL.wwu" DateLow="1337054565" DateHigh="30597834"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3470735373" DateHigh="30594982"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1053752473" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1053792510" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Attenuations\Default Work Unit.wwu" DateLow="1053802609" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Audio Devices\Default Work Unit.wwu" DateLow="1053802609" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="1053812520" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Conversion Settings\Default Work Unit.wwu" DateLow="1053822525" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1053822525" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\CoupD'oeil Wwise.Jean.wsettings" DateLow="1513493562" DateHigh="30597801"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\CoupD'oeil Wwise.wproj" DateLow="2509824761" DateHigh="30597817"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1053862553" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Effects\Default Work Unit.wwu" DateLow="1053872558" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Effects\Factory Auro Headphone.wwu" DateLow="1053872558" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Effects\Factory Effects.wwu" DateLow="2481471296" DateHigh="30597569"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Effects\Factory iZotope Box Modeler.wwu" DateLow="1053902581" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Effects\Factory iZotope Delay.wwu" DateLow="1053902581" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Effects\Factory iZotope Dynamics.wwu" DateLow="1053912590" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Effects\Factory iZotope Filters.wwu" DateLow="1053922591" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Effects\Factory iZotope Hybrid Reverb Effects.wwu" DateLow="1053922591" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="1053932609" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="1053932609" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Effects\Factory McDSP Effects.wwu" DateLow="1053892572" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Events\Default Work Unit.wwu" DateLow="966141821" DateHigh="30597831"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Game Parameters\BUS CONTROLLER.wwu" DateLow="3470815442" DateHigh="30594982"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Game Parameters\Default Work Unit.wwu" DateLow="3470815442" DateHigh="30594982"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="1053952619" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Interactive Music Hierarchy\COUPDOEIL.wwu" DateLow="2481491310" DateHigh="30597569"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="3470835448" DateHigh="30594982"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="966091787" DateHigh="30597831"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Mixing Sessions\Default Work Unit.wwu" DateLow="1053972633" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Modulators\Default Work Unit.wwu" DateLow="1053972633" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Presets\Default Work Unit.wwu" DateLow="1054703242" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Queries\Default Work Unit.wwu" DateLow="1054713275" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Queries\Factory Queries.wwu" DateLow="1054723284" DateHigh="30591980"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\SoundBanks\Default Work Unit.wwu" DateLow="7526499" DateHigh="30594983"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="2515577347" DateHigh="30597817"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\States\Default Work Unit.wwu" DateLow="39447403" DateHigh="30595678"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Switches\Default Work Unit.wwu" DateLow="7546530" DateHigh="30594983"/>
+	<ValidationCacheItem File="D:\Games\CREA\coupsDoeil_Wwise\Triggers\Default Work Unit.wwu" DateLow="1054753193" DateHigh="30591980"/>
+</ValidationCache>

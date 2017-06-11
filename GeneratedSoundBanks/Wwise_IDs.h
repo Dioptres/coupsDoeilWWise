@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID AGITATEUR_MARCHE = 2688714084U;
         static const AkUniqueID AGITATEUR_PLANTE = 4280665010U;
         static const AkUniqueID AGITATEUR_REGARD = 2449017055U;
+        static const AkUniqueID AGITATEUR_STOPMARCHE = 2066793228U;
         static const AkUniqueID AMBIANCE = 2981377429U;
         static const AkUniqueID BASS_FILL = 3360699968U;
         static const AkUniqueID CARTON_SCENE1 = 3503969070U;
@@ -27,6 +28,8 @@ namespace AK
         static const AkUniqueID CHAMPI_DEGONFLE = 339366856U;
         static const AkUniqueID CHAMPI_FLASH = 3268928720U;
         static const AkUniqueID CHAMPI_GONFLE = 3360254677U;
+        static const AkUniqueID CHAMPI_STOPDEGONFLE = 1871458224U;
+        static const AkUniqueID CHAMPI_STOPGONFLE = 1724000029U;
         static const AkUniqueID CHANTEUR_NEGATIF = 55309960U;
         static const AkUniqueID CHANTEUR_NEUTRE = 1448544655U;
         static const AkUniqueID CHANTEUR_POSITIF = 1332528068U;
@@ -42,6 +45,7 @@ namespace AK
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID RUMEUR_MARCHE = 3609129866U;
         static const AkUniqueID RUMEUR_REGARD = 505317385U;
+        static const AkUniqueID RUMEUR_STOPMARCHE = 947303506U;
         static const AkUniqueID TOURNELUNE_SWITCH = 1886303237U;
         static const AkUniqueID UKU_FILL = 679765766U;
     } // namespace EVENTS

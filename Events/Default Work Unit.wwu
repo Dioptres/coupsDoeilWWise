@@ -327,36 +327,6 @@
 										</Element>
 									</ElementList>
 								</Action>
-								<Action Name="Play" ID="{68D8EC15-CD74-4062-8976-0BA18BE0B3BC}" ShortID="755475068" Type="Play" Scope="One" Global="false">
-									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="0.4"/>
-									</PropertyList>
-									<ElementList>
-										<Element ID="{3CA2E7FC-CF03-4B6B-84DA-65549030AE62}" Global="false">
-											<ObjectRef Name="Rumeur_regard" ID="{5C3463D2-DD5D-4660-B6EF-883F133338AE}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
-										</Element>
-									</ElementList>
-								</Action>
-								<Action Name="Play" ID="{1681355F-B4F6-4976-AC50-C1CBE5055419}" ShortID="87252730" Type="Play" Scope="One" Global="false">
-									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="0.8"/>
-									</PropertyList>
-									<ElementList>
-										<Element ID="{F07D3C2A-FC85-4EAD-900B-253BC735BD76}" Global="false">
-											<ObjectRef Name="Rumeur_regard" ID="{5C3463D2-DD5D-4660-B6EF-883F133338AE}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
-										</Element>
-									</ElementList>
-								</Action>
-								<Action Name="Play" ID="{26EF5352-62A3-47D6-9523-5FBAF94097D5}" ShortID="697736573" Type="Play" Scope="One" Global="false">
-									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="1.3"/>
-									</PropertyList>
-									<ElementList>
-										<Element ID="{3F094DFC-DD41-4662-8566-3B41161DA1CD}" Global="false">
-											<ObjectRef Name="Rumeur_regard" ID="{5C3463D2-DD5D-4660-B6EF-883F133338AE}" WorkUnitID="{519601F9-D162-49C7-8813-472C6B2FAEC9}"/>
-										</Element>
-									</ElementList>
-								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Lampadaire_Off" ID="{0D9B705F-8264-42E2-A923-5242C88A0902}">

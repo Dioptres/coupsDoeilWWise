@@ -76,6 +76,11 @@
 												<Value>True</Value>
 											</ValueList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-25</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -150,6 +155,13 @@
 									</Playlist>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="steps" ID="{E5C549EC-D62B-4064-9B84-4C3D9377BA2F}" ShortID="944632824">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -160,13 +172,6 @@
 									</ReferenceList>
 								</RandomSequenceContainer>
 								<BlendContainer Name="Lampiste tp" ID="{7F8B7291-1554-49EA-8D61-D2038F0712A0}" ShortID="330919504">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -188,9 +193,8 @@
 											<ChildrenList>
 												<AudioFileSource Name="TP lampiste" ID="{46FA0854-6850-41D4-95C8-6A677E311BF7}" ShortID="171198877">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.719534737417942"/>
-														<Property Name="TrimBegin" Type="Real64" Value="9.09756564551422E-02"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.873917669584244"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="7.31177455357143E-02"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.176486866012815"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>TP lampiste.wav</AudioFile>
@@ -700,6 +704,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="chanterur_sing4" ID="{D155203F-D2ED-43A5-980B-47B883752E42}" ShortID="1069366823">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.665357142857143"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.176735491071429"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.86438616071428"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>chanterur_sing4.wav</AudioFile>
 												</AudioFileSource>
@@ -719,6 +728,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="chanteur_sing3" ID="{AAFEE477-3DCB-4099-B0F6-7320C1191CFF}" ShortID="376753204">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.852488839285714"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.173270089285714"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.7708203125"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>chanteur_sing3.wav</AudioFile>
 												</AudioFileSource>
@@ -738,6 +752,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="chanteur_sing5" ID="{BCB1DBB0-9B0A-4A35-8578-3E499E6B8E20}" ShortID="915036886">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.933247767857143"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.188286830357143"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.09162109375"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>chanteur_sing5.wav</AudioFile>
 												</AudioFileSource>
@@ -909,9 +928,10 @@
 						</ActorMixer>
 						<Sound Name="tournelune" ID="{7C3CFB5E-3EC4-4393-BBD1-2ABA1F93789D}" ShortID="305103161" Type="SoundFX">
 							<PropertyList>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-16</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -940,6 +960,11 @@
 						<ActorMixer Name="Agitateur" ID="{9554E296-977A-46A7-911C-D8808FBDBCF4}" ShortID="180469248">
 							<PropertyList>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1061,7 +1086,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-2</Value>
+												<Value>-1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1144,6 +1169,14 @@
 							</ChildrenList>
 						</ActorMixer>
 						<RandomSequenceContainer Name="foule" ID="{8902396C-2230-4145-9362-5488AB8A9C09}" ShortID="592999808">
+							<PropertyList>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
@@ -1257,6 +1290,11 @@
 						<ActorMixer Name="rumeur" ID="{F384A652-B813-44A3-B183-5025912A0B9E}" ShortID="696395018">
 							<PropertyList>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1272,7 +1310,7 @@
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-11</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1365,7 +1403,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-20</Value>
+														<Value>-32</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1528,9 +1566,10 @@
 						<Sound Name="champi pousse" ID="{674A1211-BFA0-455E-BFF1-813D06C048B6}" ShortID="221094271" Type="SoundFX">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-2</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1566,9 +1605,10 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1595,7 +1635,7 @@
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-9</Value>
+										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1726,9 +1766,10 @@
 						<Sound Name="champi degonfle" ID="{467846CD-C0D0-4C40-AE74-1108BE9E8B1D}" ShortID="1009977742" Type="SoundFX">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>-15</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2261,6 +2302,7 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="RenderEffect0" Type="bool">
 									<ValueList>
 										<Value>True</Value>
@@ -2268,7 +2310,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-22</Value>
+										<Value>-19</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2312,6 +2354,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="Scene1_lampiste" ID="{FBE1580B-D591-451E-A0C3-D9445849AE7D}" ShortID="911343064" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8935F65D-A450-4A8F-A5F5-F86C50B56B03}"/>
